@@ -1,6 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
 import Site from './site/Components/site.jsx';
 
-ReactDOM.render(<Site/>, document.getElementById('root')
-);
+
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+root.render(
+   <StrictMode>
+     <Site />
+   </StrictMode>,
+ );

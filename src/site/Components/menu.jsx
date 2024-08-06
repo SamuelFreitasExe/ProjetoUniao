@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Menu(){
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
-            
+
         <a className="navbar-brand" href="/#">
           <img src=" " alt="" height="28" />
         </a>
@@ -16,21 +17,21 @@ function Menu(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#banner">Home</a>
+              <Link to="/" className="nav-link" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#features">Features</a>
+            <Link to="/features" className="nav-link" aria-current="page">Features</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#testemunho">Produtos</a>
+            <Link to="/testemunho" className="nav-link" aria-current="page">Produtos</Link>
             </li>
-            
+
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#footer">Contato</a>
+            <Link to="/contato" className="nav-link" aria-current="page">Contato</Link>
             </li>
           </ul>
-        </div>    
-      
+        </div>
+
     </div>
   </nav>;
   }
