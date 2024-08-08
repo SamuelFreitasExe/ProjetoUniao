@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function Testemunho() {
+function Projetos() {
   return (
-    <section id="testemunho">
+    <section id="projetos">
       <div className="container">
         <div id="carouselExampleInterval" className="carousel carousel-dark slide" data-bs-ride="carousel">
           <div className="carousel-inner">
@@ -40,4 +40,4 @@ function Testemunho() {
   );
 }
 
-export default Testemunho;
+export default Projetos;

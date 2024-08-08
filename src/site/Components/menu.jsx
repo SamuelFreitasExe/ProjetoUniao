@@ -20,14 +20,18 @@ function Menu(){
               <Link to="/" className="nav-link" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
-            <Link to="/features" className="nav-link" aria-current="page">Features</Link>
+            <Link to="/sobre" className="nav-link" aria-current="page">Sobre</Link>
             </li>
             <li className="nav-item">
-            <Link to="/testemunho" className="nav-link" aria-current="page">Produtos</Link>
+            <Link to="/projetos" className="nav-link" aria-current="page">Projetos</Link>
             </li>
 
             <li className="nav-item">
-            <Link to="/contato" className="nav-link" aria-current="page">Contato</Link>
+            <Link to="/relatorio" className="nav-link" aria-current="page">Relatório</Link>
+            </li>
+    
+            <li className="nav-item">
+            <Link to="/contato" className="nav-link" aria-current="page">Contatos</Link>
             </li>
           </ul>
         </div>

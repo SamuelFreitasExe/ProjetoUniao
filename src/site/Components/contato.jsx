@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Precos(){
-    return <section id="preco">
+function Contato(){
+    return <section id="contato">
         <div className="container">
 
             <div className="row text-center">
@@ -13,4 +13,4 @@ function Precos(){
                     </section>;
   }
 
-export default Precos;
+export default Contato;

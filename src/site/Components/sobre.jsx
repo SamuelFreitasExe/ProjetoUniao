@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Features(){
-    return <section id="features">
+function Sobre(){
+    return <section id="sobre">
         <div className="container">
             <div className="row">
 
@@ -28,4 +28,4 @@ function Features(){
     </section>;
   }
 
-export default Features;
+export default Sobre;
