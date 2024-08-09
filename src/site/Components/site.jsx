@@ -1,14 +1,11 @@
 import React from 'react';
-import Menu from './menu';
-
-import Home from './home';
-import Sobre from './sobre';
-import Projetos from './projetos';
-import Relatorio from './relatorio';
-import Contato from './contato';
-
-import Footer from './footer';
-import Contato from './contato';
+import Menu from './Menu/menu';
+import Home from './Home/home';
+import Sobre from './Sobre/sobre';
+import Projetos from './Projetos/projetos';
+import Relatorio from './Relatorio/relatorio';
+import Contato from './Contato/contato';
+import Footer from './Footer/footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
