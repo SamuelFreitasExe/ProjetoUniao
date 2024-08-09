@@ -7,7 +7,7 @@ function Projetos(){
                     <div className="row text-center">
 
                     </div>
-                       
+
         <h2 style={styles.sectionTitle}>Nossas Atividades</h2>
         <ul style={styles.activityList}>
           <li style={styles.activityItem}>Treinamento de Futebol</li>
@@ -15,7 +15,7 @@ function Projetos(){
           <li style={styles.activityItem}>Eventos e Competições</li>
           <li style={styles.activityItem}>Apoio Psicológico</li>
         </ul>
-  
+
                 </div>
 
 
