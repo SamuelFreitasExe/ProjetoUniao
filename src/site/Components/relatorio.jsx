@@ -1,4 +1,5 @@
 import React from 'react';
+
 import FAQ from './faq';
 import GraficoPizza from './gráfico';
 
@@ -48,3 +49,4 @@ function Relatorio() {
 }
 
 export default Relatorio;
+
