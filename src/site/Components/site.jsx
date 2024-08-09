@@ -1,13 +1,15 @@
 import React from 'react';
 import Menu from './menu';
-import Banner from './banner';
+
+import Home from './home';
 import Sobre from './sobre';
 import Projetos from './projetos';
 import Relatorio from './relatorio';
+import Contato from './contato';
+
 import Footer from './footer';
 import Contato from './contato';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 
 
 function Site(){
@@ -15,10 +17,12 @@ function Site(){
       <BrowserRouter>
         <Menu/>
         <Routes>
-          <Route path="/" element={<Banner/>} />
+
+          <Route path="/" element={<Home/>} />
           <Route path="/sobre" element={<Sobre/>} />
-          <Route path="/projetos" element={<Projetos/>} />
           <Route path="/relatorio" element={<Relatorio/>} />
+          <Route path="/projetos" element={<Projetos/>} />
+
           <Route path="/contato" element={<Contato/>} />
           <Route path='/*' element={<h1>Olá, tudo bem, como vai...</h1>} />
         </Routes>
