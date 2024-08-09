@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from './menu';
-import Banner from './banner';
-import Features from './features';
-import Testemunho from './testemunho';
-import Precos from './precos';
+import Home from './home';
+import Sobre from './sobre';
+import Projetos from './projetos';
+import Relatorio from './relatorio';
+import Contato from './contato';
 import Footer from './footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 
 
 function Site(){
@@ -14,10 +14,11 @@ function Site(){
       <BrowserRouter>
         <Menu/>
         <Routes>
-          <Route path="/" element={<Banner/>} />
-          <Route path="/features" element={<Features/>} />
-          <Route path="/testemunho" element={<Testemunho/>} />
-          <Route path="/precos" element={<Precos/>} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/sobre" element={<Sobre/>} />
+          <Route path="/relatorio" element={<Relatorio/>} />
+          <Route path="/projetos" element={<Projetos/>} />
+          <Route path="/contato" element={<Contato/>} />
           <Route path='/*' element={<h1>Olá, tudo bem, como vai...</h1>} />
         </Routes>
         <Footer/>
