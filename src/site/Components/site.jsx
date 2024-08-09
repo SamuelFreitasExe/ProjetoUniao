@@ -19,7 +19,7 @@ function Site(){
           <Route path="/sobre" element={<Sobre/>} />
           <Route path="/projetos" element={<Projetos/>} />
           <Route path="/relatorio" element={<Relatorio/>} />
-          <Route path="/constato" element={<Contato/>} />
+          <Route path="/contato" element={<Contato/>} />
           <Route path='/*' element={<h1>Olá, tudo bem, como vai...</h1>} />
         </Routes>
         <Footer/>
