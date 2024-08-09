@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Contato(){
+
     return <section id="preco">
         <div className="container">
 
@@ -8,6 +9,8 @@ function Contato(){
 
                     </div>
                 </div>
+
+
 
 
                     </section>;

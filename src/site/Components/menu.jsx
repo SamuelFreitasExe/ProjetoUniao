@@ -29,11 +29,17 @@ function Menu(){
             </li>
 
             <li className="nav-item">
+
             <Link to="/relatorio" className="nav-link" aria-current="page">Transparência</Link>
+   
             </li>
 
             <li className="nav-item">
-            <Link to="/contato" className="nav-link" aria-current="page">Contato</Link>
+            <Link to="/relatorio" className="nav-link" aria-current="page">Relatório</Link>
+            </li>
+    
+            <li className="nav-item">
+            <Link to="/contato" className="nav-link" aria-current="page">Contatos</Link>
             </li>
           </ul>
         </div>
