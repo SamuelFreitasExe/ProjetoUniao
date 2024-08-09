@@ -22,6 +22,17 @@ function Menu(){
 
             <li className="nav-item">
             <Link to="/sobre" className="nav-link" aria-current="page">Sobre</Link>
+<<<<<<< HEAD:src/site/Components/Menu/menu.jsx
+=======
+            </li>
+
+            <li className="nav-item">
+            <Link to="/projetos" className="nav-link" aria-current="page">Projetos</Link>
+            </li>
+
+            <li className="nav-item">
+            <Link to="/relatorio" className="nav-link" aria-current="page">Transparência</Link>
+>>>>>>> 524a5dc (Atualizando pagina de relatorio com grafico e estrutura):src/site/Components/menu.jsx
             </li>
 
             <li className="nav-item">

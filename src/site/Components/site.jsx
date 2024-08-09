@@ -14,13 +14,12 @@ function Site(){
       <BrowserRouter>
         <Menu/>
         <Routes>
-
           <Route path="/" element={<Home/>} />
           <Route path="/sobre" element={<Sobre/>} />
           <Route path="/relatorio" element={<Relatorio/>} />
           <Route path="/projetos" element={<Projetos/>} />
-
           <Route path="/contato" element={<Contato/>} />
+          <Route path='/*' element={<h1>Olá, tudo bem, como vai...</h1>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
