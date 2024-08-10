@@ -90,15 +90,9 @@ p{
 /* PROJETOS */
 
 
-#projetos{
-    padding: 7% 5%;
-}
 
-.projetos-box{
 
-    text-align: center;
-    padding: 5%;
-}
+
 
 .icon {
     color: #0d6efd;
@@ -293,3 +287,4 @@ p{
   }
 
 }
+

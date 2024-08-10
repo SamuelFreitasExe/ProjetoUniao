@@ -1,0 +1,99 @@
+.projetos-list-container {
+    padding: 200px;
+    /* Adiciona preenchimento ao redor da lista */
+    margin-top: -200px;
+}
+
+.projetos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Diminui o espaçamento entre os itens da lista */
+    list-style: none;
+    /* Remove os marcadores padrão da lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+    margin: 0;
+    /* Remove a margem padrão da lista */
+}
+
+.projeto-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 10px);
+    /* Diminui a largura dos itens da lista */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.projeto-img {
+    width: 100%;
+    height: 180px;
+    /* Diminui a altura da imagem */
+    object-fit: cover;
+}
+
+.projeto-content {
+    padding: 15px;
+    /* Reduz o preenchimento interno */
+}
+
+.projeto-content h3 {
+    font-size: 1.6em;
+    /* Diminui o tamanho do título */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projeto-content p {
+    font-size: 1em;
+    /* Diminui o tamanho da descrição */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.projeto-btn {
+    padding: 8px 16px;
+    /* Reduz o preenchimento do botão */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    /* Diminui o tamanho da fonte do botão */
+    transition: background-color 0.3s;
+}
+
+.projeto-btn:hover {
+    background-color: #0056b3;
+}
+
+.projetos-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+p {
+
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    
+}

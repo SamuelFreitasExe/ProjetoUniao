@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Contato(){
-    return <section id="preco">
+    return <section id="Contato">
          <div className="container">
              <div className="row text-center">
                 <h1>Contato</h1>
