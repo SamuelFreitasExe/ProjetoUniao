@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +36,11 @@ p{
     padding: 0 20px;
     font-size: 1rem;
     text-align: justify;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: justify;
 
 }
 
@@ -59,6 +63,21 @@ p{
     padding: 100px 0 70px 0;
 }
 
+#home img{
+    width: 100%;
+}
+
+.btn-home{
+    margin: 8% 3% 5% 0;
+}
+/* HOME */
+
+#home{
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 100px 0 70px 0;
+}
+
 
 #home img{
     width: 100%;
@@ -71,23 +90,22 @@ p{
 /* SOBRE */
 
 #sobre{
-
     background-color: #0d6efd;
     color: #ffffff;
     padding: 100px 0 70px 0;
 }
-
 
 #sobre img{
     width: 100%;
 }
 
 .btn-sobre{
-
     margin: 8% 3% 5% 0;
 }
 
 /* PROJETOS */
+
+
 
 
 
@@ -101,7 +119,6 @@ p{
 
 
 /* RELATORIO */
-
 
 #intro{
     margin-top: 35px;
@@ -121,7 +138,6 @@ p{
 }
 
 #relatorio img {
-
     border-radius: 50%;
     width: 10%;
     margin: 20px;
@@ -145,7 +161,6 @@ p{
 }
 
 /* RESUMO FINANCEIRO */
-
 
 #resumo-financeiro {
     background-color: #ffffff;
@@ -209,7 +224,6 @@ p{
 }
 
 #contato{
-
     padding: 5% 15% 8%;
     color: #323338;
 }
@@ -261,8 +275,6 @@ p{
     background-color: #f3f3f3;
 }
 
-
-
 @media screen and (max-width: 768px) {
   #intro, #resumo-financeiro, #governanca, #parcerias {
     padding: 15px;
@@ -287,4 +299,5 @@ p{
   }
 
 }
+
 

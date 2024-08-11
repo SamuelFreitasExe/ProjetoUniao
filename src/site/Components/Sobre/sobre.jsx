@@ -7,9 +7,13 @@ function Sobre(){
 
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-heart fa-5x"></i>
+<<<<<<<< HEAD:src/site/Components/Sobre/sobre.jsx
 
                     <h3>Fácil de usar</h3>
 
+========
+                    <h3>Fácil de usar</h3>
+>>>>>>>> 524a5dc (Atualizando pagina de relatorio com grafico e estrutura):src/site/Components/sobre.jsx
                     <p>O sistema possui uma interface muito simples e fácil de utilizar.</p>
                 </div>
 
@@ -22,11 +26,16 @@ function Sobre(){
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-columns fa-5x"></i>
                     <h3>Organização é tudo</h3>
+<<<<<<<< HEAD:src/site/Components/Sobre/sobre.jsx
 
                     <p>Tenha sua lista de cadastro muito bem organizada e de fácil consulta .</p>
                 </div>
 
 
+========
+                    <p>Tenha sua lista de cadastro muito bem organizada e de fácil consulta .</p>
+                </div>
+>>>>>>>> 524a5dc (Atualizando pagina de relatorio com grafico e estrutura):src/site/Components/sobre.jsx
             </div>
         </div>
     </section>;

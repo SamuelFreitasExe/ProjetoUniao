@@ -28,6 +28,7 @@ function Projetos() {
     },
   ];
 
+
   const navegarParaPaginaFutebol = () => {
     navigate('/pagina-futebol'); // Navega para a página desejada
   };
