@@ -7,7 +7,6 @@ function Sobre(){
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-heart fa-5x"></i>
                     <h3>Fácil de usar</h3>
-                   <h3>Fácil de usar</h3>
                     <p>O sistema possui uma interface muito simples e fácil de utilizar.</p>
                 </div>
                 <div className="col-lg-4 feature-box">
