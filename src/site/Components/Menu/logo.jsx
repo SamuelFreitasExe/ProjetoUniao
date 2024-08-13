@@ -2,12 +2,12 @@ import React from 'react';
 function Logo(){
 
     return (
-        <div>
+        <div className='container' style={{ maxWidth: '250px' }}>
          <a className="navbar-brand" href="/#">
-          <img src="/images/logo.jpg" alt="Logo" height="38" style={{ marginLeft: '20px' }} />
+          <img src="/Images/logo-trans.png" alt="Logo" style={{ maxHeight: '150px'}} />
         </a>
         </div>
       );
     }
-    
+
     export default Logo;
