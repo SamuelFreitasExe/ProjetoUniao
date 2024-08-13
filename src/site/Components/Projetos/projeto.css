@@ -34,6 +34,7 @@
     height: 180px;
     /* Diminui a altura da imagem */
     object-fit: cover;
+    
 }
 
 .projeto-content {
@@ -73,20 +74,28 @@
 }
 
 .projetos-section {
-    padding: 80px 0;
+    padding: 30px 0;
     background-color: #f9f9f9;
 }
 
 .header {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    padding: 20px;
+    padding: 200px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./imgProjetos/img4.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-}
+    margin-top: 100px; /* Ajuste este valor conforme necessário */
+    position: relative; /* Necessário se você usar ::before para sobreposição */
+  }
+  
+  
+    
+
 
 p {
 
