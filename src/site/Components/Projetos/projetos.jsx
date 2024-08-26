@@ -7,6 +7,8 @@ import img2 from './imgProjetos/img2.jpg';
 import img3 from './imgProjetos/img3.jpg';
 import img4 from './imgProjetos/img4.jpg';
 
+
+
 function Projetos() {
   const navigate = useNavigate(); // Cria uma instância de navigate
 
@@ -59,6 +61,18 @@ function Projetos() {
           ))}
         </ul>
       </div>
+
+      <h2>Transformando Vidas</h2>
+        <p>Veja como nossas ações têm mudado a vida de crianças e adolescentes na comunidade.</p>
+        <ul>
+            <li>85 crianças e adolescentes atendidos</li>
+            <li>1200 refeições distribuídas</li>
+            <li>50 voluntários ativos</li>
+        </ul>
+        <div class="depoimento">
+            <h3>Maria Silva</h3>
+            <p>"Graças ao apoio da organização, meu filho tem se destacado na escola e se tornado mais confiante."</p>
+        </div>
     </section>
   );
 }

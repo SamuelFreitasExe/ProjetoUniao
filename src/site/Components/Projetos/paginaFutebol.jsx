@@ -1,11 +1,11 @@
 import React from 'react';
 import './paginaFutebol.css'; // CSS específico para esta página
-
+import img4 from './imgProjetos/img4.jpg';
 
 function PaginaFutebol() {
   return (
     <section className="futebol-section">
-      <div className="container">
+      <div className="container1">
         
         <div className="content">
           <h1>Ensinar Mais Que Futebol a Todos</h1>
@@ -18,7 +18,7 @@ function PaginaFutebol() {
           <p className="citacao">(FREIRE, 2011)</p>
         </div>
         <div className="imagem">
-       
+          <img src={img4} alt="Futebol" />
         </div>
       </div>
     </section>
