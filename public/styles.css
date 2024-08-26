@@ -1,8 +1,9 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -11,120 +12,89 @@ body {
     color: #333;
 }
 
+/* Cabeçalhos */
 h1, h2 {
     color: #0056b3;
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Links */
 a {
     color: #007BFF;
     text-decoration: none;
 }
 
-  a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-  section {
+/* Seções */
+section {
     margin-bottom: 50px;
 }
 
-p{
+/* Parágrafos */
+p {
     color: #5a5a5a;
     margin-bottom: 20px;
     padding: 0 20px;
     font-size: 1rem;
     text-align: justify;
-    color: #5a5a5a;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: justify;
-
 }
 
+/* Elemento root */
 #root {
     height: 95vh;
 }
 
-
-/* NAVBAR */
-
+/* Navbar */
 .navbar {
     background-color: #0d6efd;
 }
 
-
-/* HOME */
-
-#home{
+/* Home */
+#home {
     background-color: #0d6efd;
     color: #ffffff;
     padding: 100px 0 70px 0;
 }
 
-#home img{
+#home img {
     width: 100%;
 }
 
-.btn-home{
+.btn-home {
     margin: 8% 3% 5% 0;
 }
-/* HOME */
 
-#home{
+/* Sobre */
+#sobre {
     background-color: #0d6efd;
     color: #ffffff;
     padding: 100px 0 70px 0;
 }
 
-
-#home img{
+#sobre img {
     width: 100%;
 }
 
-.btn-home{
+.btn-sobre {
     margin: 8% 3% 5% 0;
 }
 
-/* SOBRE */
-
-#sobre{
-    background-color: #0d6efd;
-    color: #ffffff;
-    padding: 100px 0 70px 0;
-}
-
-#sobre img{
-    width: 100%;
-}
-
-.btn-sobre{
-    margin: 8% 3% 5% 0;
-}
-
-/* PROJETOS */
-
-
-
-
-
-
-
-
+/* Projetos */
 .icon {
     color: #0d6efd;
     margin-bottom: 15px;
 }
 
-
-/* RELATORIO */
-
-#intro{
+/* Relatório */
+#intro {
     margin-top: 35px;
 }
-#intro h1{
+
+#intro h1 {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -132,7 +102,7 @@ p{
     margin-bottom: 30px;
 }
 
-#relatorio{
+#relatorio {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -161,8 +131,7 @@ p{
     color: #0354ac;
 }
 
-/* RESUMO FINANCEIRO */
-
+/* Resumo Financeiro */
 #resumo-financeiro {
     background-color: #ffffff;
     padding: 20px;
@@ -196,8 +165,7 @@ p{
     background-color: #003d80;
 }
 
-/* GOVERNANCA E PARCERIAS */
-
+/* Governança e Parcerias */
 #governanca, #parcerias {
     background-color: #ffffff;
     padding: 20px;
@@ -218,19 +186,17 @@ p{
     text-align: center;
 }
 
-/* CONTATO */
-
-#contato .titulo{
+/* Contato */
+#contato .titulo {
     margin-top: 5%;
 }
 
-#contato{
+#contato {
     padding: 5% 15% 8%;
     color: #323338;
 }
 
 /* FAQ */
-
 #faqs {
     max-width: 1200px;
     margin: 50px auto;
@@ -259,7 +225,7 @@ p{
 
 .faq-question:hover {
     background-color: #0056b3;
-  }
+}
 
 .faq-answer {
     padding: 15px;
@@ -268,35 +234,34 @@ p{
     border: 1px solid #ddd;
 }
 
-/* FOOTER */
-
+/* Footer */
 #footer {
     padding: 3% 15%;
     text-align: center;
     background-color: #f3f3f3;
 }
 
+/* Responsividade */
 @media screen and (max-width: 768px) {
-  #intro, #resumo-financeiro, #governanca, #parcerias {
-    padding: 15px;
-  }
+    #intro, #resumo-financeiro, #governanca, #parcerias {
+        padding: 15px;
+    }
 
-  h1, h2 {
-    font-size: 1.5rem;
-  }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
 
-  p {
-    font-size: 1rem;
-  }
+    p {
+        font-size: 1rem;
+    }
 
-  .chart-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  #btn-download a {
-    padding: 8px 16px;
-    font-size: 1rem;
-  }
-
+    #btn-download a {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
 }

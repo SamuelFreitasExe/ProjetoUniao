@@ -1,111 +1,179 @@
-.projetos-list-container {
-    padding: 200px;
-    /* Adiciona preenchimento ao redor da lista */
-    margin-top: -200px;
+.projetos-section {
+    padding: 20px;
+}
+
+.header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
 }
 
 .projetos-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
-    /* Diminui o espaçamento entre os itens da lista */
-    list-style: none;
-    /* Remove os marcadores padrão da lista */
-    padding: 0;
-    /* Remove o preenchimento padrão da lista */
-    margin: 0;
-    /* Remove a margem padrão da lista */
 }
 
 .projeto-item {
-    background: #fff;
+    flex: 1;
+    min-width: 250px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    width: calc(50% - 10px);
-    /* Diminui a largura dos itens da lista */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .projeto-img {
     width: 100%;
-    height: 180px;
-    /* Diminui a altura da imagem */
+    height: 200px;
     object-fit: cover;
-    
+    border-radius: 10px; /* Curvatura das bordas para um visual mais moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições para efeitos de hover */
+}
+
+.projeto-item:hover .projeto-img {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
+}
+
+
+.projeto-item:hover .projeto-img {
+    opacity: 0.8;
 }
 
 .projeto-content {
     padding: 15px;
-    /* Reduz o preenchimento interno */
-}
-
-.projeto-content h3 {
-    font-size: 1.6em;
-    /* Diminui o tamanho do título */
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.projeto-content p {
-    font-size: 1em;
-    /* Diminui o tamanho da descrição */
-    color: #666;
-    margin-bottom: 15px;
 }
 
 .projeto-btn {
-    padding: 8px 16px;
-    /* Reduz o preenchimento do botão */
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9em;
-    /* Diminui o tamanho da fonte do botão */
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .projeto-btn:hover {
     background-color: #0056b3;
 }
 
-.projetos-section {
-    padding: 30px 0;
-    background-color: #f9f9f9;
-}
 
 .header {
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 200px;
+    margin: 100px;
+    padding: 100px; /* Ajuste a quantidade de padding para um melhor espaçamento */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./imgProjetos/img4.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir o elemento */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    margin-top: 100px; /* Ajuste este valor conforme necessário */
-    position: relative; /* Necessário se você usar ::before para sobreposição */
-  }
-  
-  
-    
-
+}
 
 p {
-
     color: #5a5a5a;
     margin-bottom: 20px;
     padding: 0 20px;
     font-size: 1rem;
     text-align: center;
-    
 }
-.li{
+
+ul {
+    padding: 0; /* Remove o padding padrão */
+}
+
+li {
+    text-align: center;
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 10px 0; /* Adiciona algum padding para espaçamento */
+}
+
+
+/* Seção de Testemunhos */
+#testemunho {
+    background-color: #f9f9f9; /* Ajustado para combinar com o fundo geral */
+    color: #323338;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adicionando sombra para destaque */
+    margin-top: 50px;
+}
+
+#testemunho h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0056b3; /* Consistente com o estilo geral da página */
+}
+
+#testemunho em {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem; /* Aumentado para melhor legibilidade */
+    font-style: normal;
+    color: #666;
+}
+
+#testemunho img {
+    border-radius: 50%;
+    width: 100px; /* Ajustado para manter consistência */
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+/* Adicione isso ao seu arquivo CSS */
+
+.stats-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style: none; /* Remove os marcadores da lista */
+    background-color: #f9f9f9; /* Fundo suave para destacar a lista */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um efeito de elevação */
+}
+
+.stats-list li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 10px;
     text-align: center;
 }
+
+.stats-list li span {
+    display: block;
+    font-size: 2rem;
+    color: #0056b3; /* Cor destacada para os números */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .stats-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-list li {
+        margin: 10px 0;
+    }
+}
+
