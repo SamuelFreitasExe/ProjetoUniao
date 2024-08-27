@@ -1,179 +1,202 @@
+/* Seção de Projetos */
 .projetos-section {
     padding: 20px;
+    background-color: #f5f5f5; /* Fundo leve para um visual clean */
+}
+
+.header {
+    max-width: 1200px;
+    margin: 100px auto; /* Centraliza o header */
+    padding: 40px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./imgProjetos/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
 }
 
 .header h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3;
 }
 
 .intro p {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+}
+
+.projetos-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .projetos-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
 }
 
 .projeto-item {
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 calc(25% - 20px); /* Ajusta o tamanho dos itens */
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
+    background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
 }
 
 .projeto-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .projeto-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px; /* Curvatura das bordas para um visual mais moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições para efeitos de hover */
-}
-
-.projeto-item:hover .projeto-img {
-    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
-}
-
-
-.projeto-item:hover .projeto-img {
-    opacity: 0.8;
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda sutil entre a imagem e o conteúdo */
 }
 
 .projeto-content {
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo verticalmente */
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
 }
 
 .projeto-btn {
     background-color: #007bff;
-    color: white;
-    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    align-self: center; /* Centraliza o botão horizontalmente */
 }
 
 .projeto-btn:hover {
     background-color: #0056b3;
 }
 
-
-.header {
-    max-width: 1500px;
-    margin: 100px;
-    padding: 100px; /* Ajuste a quantidade de padding para um melhor espaçamento */
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./imgProjetos/img4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-p {
-    color: #5a5a5a;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-}
-
-ul {
-    padding: 0; /* Remove o padding padrão */
-}
-
-li {
-    text-align: center;
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 10px 0; /* Adiciona algum padding para espaçamento */
-}
-
-
-/* Seção de Testemunhos */
-#testemunho {
-    background-color: #f9f9f9; /* Ajustado para combinar com o fundo geral */
-    color: #323338;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adicionando sombra para destaque */
-    margin-top: 50px;
-}
-
-#testemunho h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #0056b3; /* Consistente com o estilo geral da página */
-}
-
-#testemunho em {
-    display: block;
-    margin-top: 15px;
-    font-size: 1.2rem; /* Aumentado para melhor legibilidade */
-    font-style: normal;
-    color: #666;
-}
-
-#testemunho img {
-    border-radius: 50%;
-    width: 100px; /* Ajustado para manter consistência */
-    margin: 20px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
-}
-
-.carousel-item {
-    padding: 20px;
-}
-
-/* Adicione isso ao seu arquivo CSS */
-
+/* Seção de Estatísticas */
 .stats-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    list-style: none; /* Remove os marcadores da lista */
-    background-color: #f9f9f9; /* Fundo suave para destacar a lista */
+    list-style: none;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um efeito de elevação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
 .stats-list li {
     font-size: 1.2rem;
     font-weight: 600;
     color: #333;
-    margin: 10px;
     text-align: center;
+    margin: 10px;
 }
 
 .stats-list li span {
     display: block;
     font-size: 2rem;
-    color: #0056b3; /* Cor destacada para os números */
+    color: #0056b3;
     font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
+    .projeto-item {
+        flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho para telas menores */
+    }
+
     .stats-list {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .stats-list li {
-        margin: 10px 0;
-    }
 }
 
+/* Seção de Testemunhos */
+#testemunho {
+    background-color: #f5f5f5; /* Fundo leve para uma aparência clean */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#testemunho .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-item h2 {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic; /* Estilo de fonte para citações */
+}
+
+.carousel-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.carousel-item em {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botões de navegação do carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Cor de fundo dos botões */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #fff; /* Cor dos ícones */
+    border-radius: 50%;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
