@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './projeto.css'; 
+import './projeto.css';
+
 import img1 from './imgProjetos/img1.jpg';
 import img2 from './imgProjetos/img2.jpg';
 import img3 from './imgProjetos/img3.jpg';
 import img4 from './imgProjetos/img4.jpg';
-import useIntersectionObserver from './hooks/useIntersectionObserver'; // Importe o hook
+import useIntersectionObserver from './hooks/useIntersectionObserver';
 import Testemunho from './Testemunho';
+import InscricaoFutebol from '../Projetos/InscricaoFutebol';
 
 function AnimatedNumber({ end, start }) {
   const [count, setCount] = useState(start);
@@ -32,11 +34,22 @@ function AnimatedNumber({ end, start }) {
   return <span>{count}</span>;
 }
 
+function ProjetoItem({ projeto, onClick }) {
+  return (
+    <li className="projeto-item">
+      <img src={projeto.imgSrc} alt={projeto.title} className="projeto-img" />
+      <div className="projeto-content">
+        <h3>{projeto.title}</h3>
+        <p>{projeto.description}</p>
+        <button className="projeto-btn" onClick={onClick}>Saiba Mais</button>
+      </div>
+    </li>
+  );
+}
+
 function Projetos() {
   const navigate = useNavigate();
-  const [ref, isVisible] = useIntersectionObserver({
-    threshold: 0.5 // Ajuste conforme necessário
-  });
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
 
   const projetos = [
     { imgSrc: img1, title: 'Educação para Todos', description: 'Oferecemos aulas de reforço escolar e atividades extracurriculares para garantir que cada criança tenha acesso à educação de qualidade.' },
@@ -50,24 +63,21 @@ function Projetos() {
   };
 
   return (
-    <section id="projetos" className="projetos-section">
-      <header className="header">
-        <h2>Nossos Projetos</h2>
+    <section>
+      <header className="header banner">
+        <div className="header-content banner-content">
+          <h2>Nossos Projetos</h2>
+        </div>
       </header>
+
       <div className="intro">
         <p>Conheça os projetos que desenvolvemos para impactar positivamente a vida das pessoas na comunidade de Foz do Iguaçu.</p>
       </div>
+
       <div className="projetos-list-container">
         <ul className="projetos-list">
           {projetos.map((projeto, index) => (
-            <li key={index} className="projeto-item">
-              <img src={projeto.imgSrc} alt={projeto.title} className="projeto-img" />
-              <div className="projeto-content">
-                <h3>{projeto.title}</h3>
-                <p>{projeto.description}</p>
-                <button className="projeto-btn" onClick={navegarParaPaginaFutebol}>Saiba Mais</button>
-              </div>
-            </li>
+            <ProjetoItem key={index} projeto={projeto} onClick={navegarParaPaginaFutebol} />
           ))}
         </ul>
       </div>
@@ -80,6 +90,7 @@ function Projetos() {
         <li><span>{isVisible ? <AnimatedNumber end={50} start={0} /> : '50'}</span> voluntários ativos</li>
       </ul>
       <Testemunho />
+      <InscricaoFutebol />
     </section>
   );
 }

@@ -1,27 +1,73 @@
-/* Seção de Projetos */
-.projetos-section {
-    padding: 20px;
-    background-color: #f5f5f5; /* Fundo leve para um visual clean */
+.banner {
+    position: relative;
+    width: 100%;
+    /* Largura total */
+    min-height: 348px;
+    /* Altura mínima do banner */
+    background-image: url("https://www.institutoacervo.org.br/wp-content/uploads/2024/03/img42.jpg");
+    background-position: center center;
+    /* Centraliza a imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área */
+    display: flex;
+    /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    transition: background 0.3s ease;
+    /* Transição suave para o fundo */
+    margin-top: 90px;
 }
 
-.header {
-    max-width: 1200px;
-    margin: 100px auto; /* Centraliza o header */
-    padding: 40px;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./imgProjetos/img4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro com transparência para legibilidade */
+    color: white;
+    /* Cor do texto */
+    padding: 30px;
+    /* Espaçamento interno */
     text-align: center;
-    color: #333;
+    /* Centraliza o texto */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    width: 100%;
+    /* Ajuste para que o conteúdo se adapte em telas menores */
+    max-width: 1349px;
+    /* Largura máxima */
+}
+
+.projetos-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    /* Fundo leve para um visual clean */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .header {
+        --content-width: 920px;
+        /* Largura do conteúdo em telas maiores */
+        padding: 0%;
+        /* Para cobrir o banner */
+    }
+
+    .banner-content {
+        --overlay-opacity: 0.5;
+        /* Opacidade do overlay */
+    }
 }
 
 .header h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #0056b3;
+    color: #f5f5f5;
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 55vh;
 }
 
 .intro p {
@@ -47,7 +93,8 @@
 }
 
 .projeto-item {
-    flex: 1 1 calc(25% - 20px); /* Ajusta o tamanho dos itens */
+    flex: 1 1 calc(25% - 20px);
+    /* Ajusta o tamanho dos itens */
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -55,7 +102,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente */
 }
 
 .projeto-item:hover {
@@ -67,7 +115,8 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 1px solid #ddd; /* Adiciona uma borda sutil entre a imagem e o conteúdo */
+    border-bottom: 1px solid #ddd;
+    /* Adiciona uma borda sutil entre a imagem e o conteúdo */
 }
 
 .projeto-content {
@@ -75,8 +124,10 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinha o conteúdo verticalmente */
-    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    justify-content: space-between;
+    /* Alinha o conteúdo verticalmente */
+    flex: 1;
+    /* Faz o conteúdo ocupar o espaço disponível */
 }
 
 .projeto-btn {
@@ -89,8 +140,10 @@
     transition: background-color 0.3s ease;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 20px; /* Adiciona espaço acima do botão */
-    align-self: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px;
+    /* Adiciona espaço acima do botão */
+    align-self: center;
+    /* Centraliza o botão horizontalmente */
 }
 
 .projeto-btn:hover {
@@ -128,7 +181,8 @@
 
 @media screen and (max-width: 768px) {
     .projeto-item {
-        flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho para telas menores */
+        flex: 1 1 calc(50% - 20px);
+        /* Ajusta o tamanho para telas menores */
     }
 
     .stats-list {
@@ -139,7 +193,8 @@
 
 /* Seção de Testemunhos */
 #testemunho {
-    background-color: #f5f5f5; /* Fundo leve para uma aparência clean */
+    background-color: #f5f5f5;
+    /* Fundo leve para uma aparência clean */
     padding: 40px 20px;
     text-align: center;
     border-radius: 8px;
@@ -153,10 +208,12 @@
 }
 
 .carousel-item h2 {
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 1.5rem;
+    /* Ajuste o tamanho da fonte conforme necessário */
     color: #333;
     margin-bottom: 20px;
-    font-style: italic; /* Estilo de fonte para citações */
+    font-style: italic;
+    /* Estilo de fonte para citações */
 }
 
 .carousel-item img {
@@ -176,27 +233,53 @@
 }
 
 /* Botões de navegação do carrossel */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     width: 50px;
     height: 50px;
-    background-color: #007bff; /* Cor de fundo dos botões */
+    background-color: #007bff;
+    /* Cor de fundo dos botões */
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #fff; /* Cor dos ícones */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+    /* Cor dos ícones */
     border-radius: 50%;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #0056b3;
+    /* Cor de fundo ao passar o mouse */
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 20px;
     height: 20px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.projetos-section {
+    position: relative;
+    overflow: hidden;
+    /* Para garantir que o overlay fique dentro da seção */
+}
+
+.fundo {
+    background-image: url('./imgProjetos/Flexi4A.png');
+    /* Use url() corretamente */
+    background-color: #0056b3;
+    width: 100%;
+    height: 100%;
+    /* Defina a altura para garantir que a imagem de fundo seja visível */
+    background-position: center center;
+    /* Centraliza a imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área */    
 }

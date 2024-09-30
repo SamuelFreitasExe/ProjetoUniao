@@ -1,0 +1,103 @@
+/* home.css */
+
+/* Seção da vitrine de projetos */
+.vitrine-projetos-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Título principal da seção */
+.vitrine-projetos-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+.vitrine-projetos-section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+/* Container da lista de projetos */
+.vitrine-projetos-list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Item individual da vitrine de projetos */
+.vitrine-projeto-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.vitrine-projeto-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem dentro do item da vitrine */
+.vitrine-projeto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+  transition: filter 0.3s ease;
+}
+
+.vitrine-projeto-item:hover .vitrine-projeto-img {
+  filter: brightness(100%);
+}
+
+/* Conteúdo sobreposto na parte inferior do item da vitrine */
+.vitrine-projeto-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: left;
+}
+
+.vitrine-projeto-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .vitrine-projeto-item {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vitrine-projetos-section h2 {
+    font-size: 2rem;
+  }
+
+  .vitrine-projeto-item {
+    height: 150px;
+  }
+}

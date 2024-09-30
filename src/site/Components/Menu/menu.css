@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #0d6efd;
+    display: flex;
+    flex-direction: column;
+    /* Mobile first */
+    align-items: center;
+    /* Centraliza os itens na direção do eixo transversal (horizontal) */
+  
+    transition: background-color 0.5s ease; /* Transição suave */
+}
+.navbar.transparent {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor transparente ao rolar */
+  }
+  .navbar.transparent:hover {
+    background-color: #0d6efd; /* Volta para a cor original ao passar o mouse */
+  }
+/* Centralização na navbar em telas maiores */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        /* Muda para linha em telas maiores */
+        justify-content: center;
+        /* Centraliza os itens na direção do eixo principal (horizontal) */
+    }
+
+    .navbar-nav {
+        display: flex;
+        /* Garante que os itens da navbar sejam exibidos em linha */
+        flex-direction: row;
+        /* Itens da navbar em linha */
+        justify-content: center;
+        /* Centraliza os itens na direção do eixo principal */
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        margin-bottom: 0;
+        list-style: none;
+        /* Permite que a navbar-nav cresça para ocupar o espaço disponível */
+    }
+}
+
+/* Estilo para a expansão da navbar */
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        /* Garante que a navbar expanda em telas médias e maiores */
+        flex-basis: auto;
+        /* Permite que a largura se ajuste automaticamente */
+    }
+}
+
+/* Estilos para colapsar a navbar */
+.collapse:not(.show) {
+    display: none;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    /* Toma 100% do espaço disponível em telas pequenas */
+    flex-grow: 1;
+    /* Permite que cresça */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+}
+
+/* Reset geral */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
