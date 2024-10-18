@@ -6,6 +6,7 @@ import img1 from './imgProjetos/img1.jpg';
 import img2 from './imgProjetos/img2.jpg';
 import img3 from './imgProjetos/img3.jpg';
 import img4 from './imgProjetos/img4.jpg';
+
 import useIntersectionObserver from './hooks/useIntersectionObserver';
 import Testemunho from './Testemunho';
 import InscricaoFutebol from '../Projetos/InscricaoFutebol';
@@ -66,8 +67,19 @@ function Projetos() {
     <section>
       <header className="header banner">
         <div className="header-content banner-content">
-          <h2>Nossos Projetos</h2>
+          <h1>Nossos Projetos</h1>
+          <div>
+            <h5>A Associação União Alexandrense é uma organização da sociedade
+              civil sem fins lucrativos que se sustenta por meio de doação e de trabalho
+              voluntário que agora está apta a participar de chamada pública municipal para
+              pleitear recursos da lei de incentivo ao esporte.
+            </h5>
+          </div>
+          <div>
+            <button className='saibaMais'>Saiba mais</button>
+          </div>
         </div>
+       
       </header>
 
       <div className="intro">

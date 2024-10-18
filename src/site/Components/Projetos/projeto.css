@@ -2,9 +2,9 @@
     position: relative;
     width: 100%;
     /* Largura total */
-    min-height: 348px;
+    min-height: 967px;
     /* Altura mínima do banner */
-    background-image: url("https://www.institutoacervo.org.br/wp-content/uploads/2024/03/img42.jpg");
+    background-image: url('/src/site/Components/Projetos/imgProjetos/img5.png');
     background-position: center center;
     /* Centraliza a imagem */
     background-size: cover;
@@ -17,25 +17,41 @@
     /* Centraliza o conteúdo verticalmente */
     transition: background 0.3s ease;
     /* Transição suave para o fundo */
-    margin-top: 90px;
+    margin-top: -100px;
 }
 
 .banner-content {
-    background: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro com transparência para legibilidade */
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 44.81%, rgba(0, 0, 0, 0.8) 95.91%),
+        linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
+
     color: white;
-    /* Cor do texto */
     padding: 30px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Centraliza o texto */
     border-radius: 5px;
-    /* Bordas arredondadas */
+    height: 967px;
     width: 100%;
-    /* Ajuste para que o conteúdo se adapte em telas menores */
+    /* Para ajustar a largura em telas menores */
     max-width: 1349px;
-    /* Largura máxima */
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o banner horizontalmente */
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-content {
+        height: auto;
+        /* Permite que o conteúdo se ajuste automaticamente */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content {
+        padding: 15px;
+    }
+}
+
 
 .projetos-section {
     padding: 20px;
@@ -58,17 +74,57 @@
     }
 }
 
-.header h2 {
-    font-size: 2.5em;
-    color: #f5f5f5;
-    display: flex;
-    /* Ativa o Flexbox */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-    height: 55vh;
+.header h1 {
+    color: #F8FAFD;
+    width: 956px;
+    height: 135px;
+    top: 308.16px;
+    left: 68.19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 135px;
+    text-align: left;
+    margin-top: 308.16px;
 }
+
+.header h5 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+    width: 738.17px;
+    height: 145px;
+    top: 445.49px;
+    left: 76.73px;
+    gap: 0px;
+    opacity: 0px;
+}
+.saibaMais {
+    width: 169px; /* Largura fixa */
+    height: 56px; /* Altura fixa */
+    position: absolute; /* Para usar as propriedades top e left */
+    top: 626px;
+    left: 30px;
+    padding: 16px 32px; /* Espaçamento interno */
+    gap: 0px; /* Sem espaço entre os itens (caso seja usado em flexbox) */
+    border-radius: 24px ; /* Bordas arredondadas */
+    border: 1px solid #F8FAFD; /* Borda com a cor especificada */
+    opacity: 1; /* Definindo opacidade para 1 para o botão ficar visível */
+    background-color: rgba(0, 0, 0, 0.1) ; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Indicador de clique */
+    transition: background-color 0.3s ease;
+}
+
+.saibaMais:hover {
+    background-color: #0056b3; /* Mudança de cor ao passar o mouse */
+}
+
+
 
 .intro p {
     margin: 0 auto 20px;
@@ -281,5 +337,5 @@
     background-position: center center;
     /* Centraliza a imagem */
     background-size: cover;
-    /* Faz a imagem cobrir toda a área */    
+    /* Faz a imagem cobrir toda a área */
 }

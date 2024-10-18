@@ -1,19 +1,25 @@
 .navbar {
-    background-color: #0d6efd;
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     /* Mobile first */
     align-items: center;
     /* Centraliza os itens na direção do eixo transversal (horizontal) */
-  
-    transition: background-color 0.5s ease; /* Transição suave */
+    transition: background-color 0.5s ease;
+    /* Transição suave */
 }
+
 .navbar.transparent {
-    background-color: rgba(0, 0, 0, 0.1); /* Cor transparente ao rolar */
-  }
-  .navbar.transparent:hover {
-    background-color: #0d6efd; /* Volta para a cor original ao passar o mouse */
-  }
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Cor transparente ao rolar */
+ 
+}
+
+.navbar.transparent:hover {
+    background-color: #0d6efd;
+    /* Volta para a cor original ao passar o mouse */
+}
+
 /* Centralização na navbar em telas maiores */
 @media (min-width: 768px) {
     .navbar {
@@ -23,7 +29,14 @@
         /* Centraliza os itens na direção do eixo principal (horizontal) */
     }
 
+    .nav-link {
+        height: 29px;
+        font-family: Arial, Helvetica, sans-serif;
+      
+    }
+
     .navbar-nav {
+
         display: flex;
         /* Garante que os itens da navbar sejam exibidos em linha */
         flex-direction: row;
@@ -37,6 +50,8 @@
         margin-bottom: 0;
         list-style: none;
         /* Permite que a navbar-nav cresça para ocupar o espaço disponível */
+        gap: 120px;
+
     }
 }
 
@@ -47,6 +62,7 @@
         /* Garante que a navbar expanda em telas médias e maiores */
         flex-basis: auto;
         /* Permite que a largura se ajuste automaticamente */
+       
     }
 }
 
@@ -76,3 +92,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color:rgb(255, 255, 255);
+  }

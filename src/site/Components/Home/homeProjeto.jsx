@@ -8,7 +8,6 @@ import img4 from './imgProjetos/img4.jpg';
 
 function VitrineProjetos() {
   const navigate = useNavigate();
-
   const projetos = [
     { imgSrc: img1, title: 'Educação para Todos' },
     { imgSrc: img2, title: 'Esporte e Cidadania' },
