@@ -1,0 +1,23 @@
+.joinchat__button__open {
+  width: 40px; /* Tamanho inicial menor */
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(0 0 0/0) url('icon.whats.png') center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+
+  /* Posiciona no lado direito */
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  z-index: 1000;
+
+  /* Transição suave ao passar o mouse */
+  transition: transform 0.3s ease;
+}
+
+.joinchat__button__open:hover {
+  /* Aumenta o tamanho do botão em 2x ao passar o mouse */
+  transform: scale(2); 
+}

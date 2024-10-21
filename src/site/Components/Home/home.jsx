@@ -1,31 +1,22 @@
 import React from 'react';
+import './Home.css'; // Importando o arquivo CSS
 
-function Home(){
-    return <section id="home">
-        <div className="container">
-            <div className="row">
+function Home() {
+  return (
+    <section className='fundo'>
+      <div className="header bannerHome">
+        <div className="header-content bannerHome-content">
+          <div className='tituloBanner' >
+            <h2>Título do Banner</h2>
+          </div>
+          <p>Mensagem principal ou descrição do projeto.</p>
 
-                <div className="col-lg-6">
-                    <h1>Uma plataforma de cadastro simples de configurar e fácil de usar.</h1>
-                    <h4>Gerencie seus produtos em um único lugar.</h4>
-                    <a href="/app/novaconta" className="btn btn-dark btn-lg btn-home">Criar uma conta</a>
-                    <a href="/app" className="btn btn-outline-light btn-lg btn-home">Fazer Login</a>
-                    <a href="/app/novapagina.jsx" className="btn btn-outline-light btn-lg btn-home">lista</a>
-                    <a href="/app/novapagina2.jsx" className="btn btn-outline-light btn-lg btn-home">lista2</a>
-
-                    <li className="nav-item">
-
-                    </li>
-
-                </div>,
-
-                <div className="col-lg-6">
-                    <img src="" alt="Logos-01-1.png" />
-                </div>
-
-            </div>
         </div>
-    </section>;
-  }
+
+      </div>
+      <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? HarumLorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? Harumipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat eveniet quod, quaerat rem sunt quibusdam dolore unde nemo debitis dolores harum aspernatur dignissimos maxime nisi fugit voluptatibus totam? Harum.</p>
+    </section>
+  );
+}
 
 export default Home;
