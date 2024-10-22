@@ -12,7 +12,7 @@
 .navbar.transparent {
     background-color: rgba(0, 0, 0, 0.1);
     /* Cor transparente ao rolar */
- 
+
 }
 
 .navbar.transparent:hover {
@@ -32,7 +32,7 @@
     .nav-link {
         height: 29px;
         font-family: Arial, Helvetica, sans-serif;
-      
+
     }
 
     .navbar-nav {
@@ -62,7 +62,7 @@
         /* Garante que a navbar expanda em telas médias e maiores */
         flex-basis: auto;
         /* Permite que a largura se ajuste automaticamente */
-       
+
     }
 }
 
