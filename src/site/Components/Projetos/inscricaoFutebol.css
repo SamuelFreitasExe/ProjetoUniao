@@ -1,0 +1,68 @@
+/* Inscrição Futebol */
+#inscricao-futebol {
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Fundo leve para um visual clean */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px 0; /* Margem superior e inferior */
+}
+
+.inscricao-container .content {
+    max-width: 800px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./imgProjetos/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inscricao-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.inscricao-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-inscricao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-inscricao:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .inscricao-container .content {
+        padding: 20px;
+    }
+
+    .inscricao-container h1 {
+        font-size: 2em;
+    }
+
+    .inscricao-container p {
+        font-size: 1rem;
+    }
+}

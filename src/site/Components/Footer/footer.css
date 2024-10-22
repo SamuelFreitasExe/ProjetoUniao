@@ -1,0 +1,62 @@
+/* src/components/Footer.css */
+#footer {
+    background-color: #1a6fc5; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 30px 0; /* Espaçamento interno do footer */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Posiciona o footer relativamente */
+    bottom: 0; /* Posiciona o footer no fundo */
+    width: 100%; /* Largura total */
+  }
+  
+  #footer .container {
+    max-width: 1320px; /* Limita a largura do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o container do footer */
+    padding: 0 16px; /* Espaçamento interno do footer */
+  }
+  
+  #footer .social {
+    margin-bottom: 20px; /* Espaçamento abaixo dos ícones sociais */
+  }
+  
+  #footer .social .list-inline-item {
+    display: inline-block; /* Exibe os ícones sociais em linha */
+    margin: 0 10px; /* Espaçamento entre ícones */
+  }
+  
+  #footer .social .fa {
+    color: #fff; /* Cor dos ícones sociais */
+    font-size: 1.5rem; /* Ajusta o tamanho dos ícones sociais */
+  }
+  
+  #footer a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+  }
+  
+  #footer a:hover {
+    color: #adb5bd; /* Cor do texto ao passar o mouse */
+  }
+  
+  #footer p {
+    margin: 0px 0 0; /* Margem acima do parágrafo */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    color: #fff;
+  }
+  
+  .acao-cidadania {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    text-align: right; /* Alinha o texto à direita */
+  }
+  .dois{
+   
+        
+        padding: 20px;
+       
+        text-align: center;
+        margin-top: -70px; /* Move o elemento 20px para cima */
+      
+      
+}

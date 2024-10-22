@@ -7,6 +7,7 @@ function Contato(){
                 <h1>Contato</h1>
                 <p>Página em construção</p>
             </div>
+            
         </div>
     </section>;
   }
