@@ -3,9 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './projeto.css';
 
 import img1 from './imgProjetos/img1.jpg';
-import img2 from './imgProjetos/img2.jpg';
-import img3 from './imgProjetos/img3.jpg';
-import img4 from './imgProjetos/img4.jpg';
+
 
 import useIntersectionObserver from './hooks/useIntersectionObserver';
 import Testemunho from './Testemunho';
@@ -52,12 +50,7 @@ function Projetos() {
   const navigate = useNavigate();
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
 
-  const projetos = [
-    { imgSrc: img1, title: 'Educação para Todos', description: 'Oferecemos aulas de reforço escolar e atividades extracurriculares para garantir que cada criança tenha acesso à educação de qualidade.' },
-    { imgSrc: img2, title: 'Esporte e Cidadania', description: 'Promovemos atividades esportivas que incentivam o trabalho em equipe, disciplina e a saúde física e mental.' },
-    { imgSrc: img3, title: 'Arte e Cultura', description: 'Organizamos oficinas de arte e eventos culturais que estimulam a criatividade e a expressão artística.' },
-    { imgSrc: img4, title: 'Saúde e Bem-Estar', description: 'Realizamos campanhas de conscientização e atividades de promoção da saúde para a comunidade.' },
-  ];
+
 
   const navegarParaPaginaFutebol = () => {
     navigate('/pagina-futebol');
@@ -79,7 +72,7 @@ function Projetos() {
             <button className='saibaMais'>Saiba mais</button>
           </div>
         </div>
-       
+
       </header>
 
       <div className="intro">
@@ -87,11 +80,15 @@ function Projetos() {
       </div>
 
       <div className="projetos-list-container">
-        <ul className="projetos-list">
-          {projetos.map((projeto, index) => (
-            <ProjetoItem key={index} projeto={projeto} onClick={navegarParaPaginaFutebol} />
-          ))}
-        </ul>
+        <div className="projetos-list">
+          <h3>Educação para todos</h3>
+          <h4>O ensino do futebol pode ir além dele, podendo aprender habilidades para outros
+            esportes, seu desenvolvimento moral e social, aprendendo a
+            conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div>
+        <div>
+         <img src="./Porjetos/imgProjetos/img1.jpg" alt="" />
+        </div>
       </div>
 
       <h2>Transformando Vidas</h2>
