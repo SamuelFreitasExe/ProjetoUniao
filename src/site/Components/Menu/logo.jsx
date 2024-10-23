@@ -1,11 +1,12 @@
 import React from 'react';
+import './logo.css';
 function Logo(){
 
     return (
-        <div  style={{ maxWidth: '10px' }}>
-         <a className="navbar-brand" href="/#">
-          <img src="/Images/logo3.png" alt="Logo" style={{ maxHeight: '75px'}} />
-        </a>
+        <div>
+         <a className="navbar-symbol" href="/#">
+          <img src="/Images/logo3.png" alt="Logo"/>
+         </a>
         </div>
       );
     }

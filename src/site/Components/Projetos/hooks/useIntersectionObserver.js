@@ -12,13 +12,15 @@ function useIntersectionObserver(options) {
             options
         );
 
-        if (ref.current) {
-            observer.observe(ref.current);
+        const elementRef = ref.current;
+
+        if (elementRef) {
+            observer.observe(elementRef);
         }
 
         return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
+            if (elementRef) {
+                observer.unobserve(elementRef);
             }
         };
     }, [options]);
