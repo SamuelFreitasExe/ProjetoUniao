@@ -1,10 +1,10 @@
 .bannerHome {
     position: relative;
-    /* Permite o posicionamento absoluto do conteúdo */
-    width: 1349px;
-    min-height: 348px;
+    width: 100%;
+    /* Largura total */
+    max-height: 100vh;
     /* Altura mínima do banner */
-    background-image: url("https://www.institutoacervo.org.br/wp-content/uploads/2024/03/img42.jpg");
+    background-image: url('../../../../public/Images/home4.jpg');
     background-position: center center;
     /* Centraliza a imagem */
     background-size: cover;
@@ -17,32 +17,63 @@
     /* Centraliza o conteúdo verticalmente */
     transition: background 0.3s ease;
     /* Transição suave para o fundo */
-    margin-top: 90px;
-    height: 450px;
+    margin-top: 0;
 }
 
 .bannerHome-content {
+    background: linear-gradient(293deg,
+    rgba(255, 255, 255, 0) 17%,
+    rgba(255, 255, 255, 0.4) 22%,
+    rgba(255, 255, 255, 0) 27%,
+    rgba(0, 0, 0, 0) 83%,
+    rgba(0, 0, 0, 0.7) 83%),
+        linear-gradient(-5deg, rgba(0, 0, 0, 0) 49.92%, rgba(100, 115, 225, 0.2) 96.2%);
 
-    background: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro com transparência para legibilidade */
     color: white;
-    /* Cor do texto */
     padding: 30px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Centraliza o texto */
     border-radius: 5px;
-    /* Bordas arredondadas */
-    width: 1349px;
-    min-height: 348px;
-    padding: 30px;
-    /* Espaçamento interno */
-    height: 450px;
-
+    height: 100vh;
+    width: 100%;
+    /* Para ajustar a largura em telas menores */
+    max-width: 1600px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
 }
 
-tituloBanner{
-    color: white;
+.bannerHome h1 {
+    color: #F8FAFD;
+    width: 956px;
+    height: 135px;
+    top: 308.16px;
+    left: 68.19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 135px;
+    text-align: left;
+    margin-top: 25vh !important;
+    text-shadow: 3px 2px 1px #000000;
+}
+
+.bannerHome h5 {
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.public-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.public-box p {
+    max-width: 60vw;
+}
+
+.public-photo img {
+    max-width: 30vw;
 }
 
 /* Responsividade */

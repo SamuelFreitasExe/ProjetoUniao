@@ -103,15 +103,66 @@ p {
 }
 
 #relatorio {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
 }
 
-#relatorio img {
-    border-radius: 50%;
-    width: 10%;
-    margin: 20px;
+.banner-relatorio {
+    position: relative;
+    width: 100%;
+    /* Largura total */
+    max-height: 100vh;
+    /* Altura mínima do banner */
+    background-image: url('./Images/Dashboard-fake.jpg');
+    background-position: center center;
+    /* Centraliza a imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área */
+    display: flex;
+    /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    transition: background 0.3s ease;
+    /* Transição suave para o fundo */
+    margin-top: 0;
+}
+
+.banner-relatorio-content {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 44.81%, rgba(0, 0, 0, 0.8) 95.91%),
+        linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
+
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 100vh;
+    width: 100%;
+    /* Para ajustar a largura em telas menores */
+    max-width: 1600px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+}
+
+.banner-relatorio h1 {
+    color: #F8FAFD;
+    width: 956px;
+    height: 135px;
+    top: 308.16px;
+    left: 68.19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 135px;
+    text-align: left;
+    margin-top: 25vh !important;
+    text-shadow: 3px 2px 1px #000000;
+}
+
+.banner-relatorio h5 {
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .grafico-container {
