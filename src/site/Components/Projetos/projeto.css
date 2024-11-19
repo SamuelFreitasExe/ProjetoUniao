@@ -103,25 +103,38 @@
     gap: 0px;
     opacity: 0px;
 }
+
 .saibaMais {
-    width: 169px; /* Largura fixa */
-    height: 56px; /* Altura fixa */
-    position: absolute; /* Para usar as propriedades top e left */
+    width: 169px;
+    /* Largura fixa */
+    height: 56px;
+    /* Altura fixa */
+    position: absolute;
+    /* Para usar as propriedades top e left */
     top: 626px;
     left: 30px;
-    padding: 16px 32px; /* Espaçamento interno */
-    gap: 0px; /* Sem espaço entre os itens (caso seja usado em flexbox) */
-    border-radius: 24px ; /* Bordas arredondadas */
-    border: 1px solid #F8FAFD; /* Borda com a cor especificada */
-    opacity: 1; /* Definindo opacidade para 1 para o botão ficar visível */
-    background-color: rgba(0, 0, 0, 0.1) ; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    cursor: pointer; /* Indicador de clique */
+    padding: 16px 32px;
+    /* Espaçamento interno */
+    gap: 0px;
+    /* Sem espaço entre os itens (caso seja usado em flexbox) */
+    border-radius: 24px;
+    /* Bordas arredondadas */
+    border: 1px solid #F8FAFD;
+    /* Borda com a cor especificada */
+    opacity: 1;
+    /* Definindo opacidade para 1 para o botão ficar visível */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    cursor: pointer;
+    /* Indicador de clique */
     transition: background-color 0.3s ease;
 }
 
 .saibaMais:hover {
-    background-color: #0056b3; /* Mudança de cor ao passar o mouse */
+    background-color: #0056b3;
+    /* Mudança de cor ao passar o mouse */
 }
 
 
@@ -137,44 +150,139 @@
 .projetos-list-container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+}
+
+
+.projeto-img {
+    width: 377px;
+    /* Controla a largura da imagem */
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+    overflow: hidden;
+    /* Impede que a imagem ultrapasse o contêiner */
+}
+
+.projeto-img img {
+    width: 100%;
+    /* Ajusta a imagem à largura do contêiner */
+    height: auto;
+    object-fit: cover;
+    /* Mantém as proporções da imagem */
 }
 
 .projetos-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0;
-    list-style: none;
-    justify-content: center;
-}
-
-.projeto-item {
-    flex: 1 1 calc(25% - 20px);
-    /* Ajusta o tamanho dos itens */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
     flex-direction: column;
-    /* Alinha o conteúdo verticalmente */
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    /* Alinha o texto à esquerda */
+    gap: 10px;
+    flex: 1;
+    /* Faz o texto ocupar o restante do espaço */
 }
 
-/*.projeto-item:hover {
-  Movimenta componente
+/*.projetos-list h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    color: #12141B;
+    font-family: Satoshi;
 }*/
 
-.projeto-img {
-    width: 664px;
-    height: 377px;
-    top: 1061px;
-    left: 862px;
-    gap: 0px;
-    opacity: 0px;
-    
+/*.projetos-list h4 {
+    font-size: 18px;
+    color: #343434;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}*/
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .projetos-list h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .projetos-list h4 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .projeto-img {
+        height: 250px;
+        /* Reduz a altura da imagem em tablets */
+    }
+
+    .projeto-img img {
+        width: 100%;
+        height: 100%;
+    }
 }
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    .projetos-list {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .projetos-list h3 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .projetos-list h4 {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+
+    .projeto-img {
+        height: 200px;
+        /* Ajusta a altura da imagem para celulares */
+    }
+
+    .projeto-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.custom-h4 {
+    color: var(--Preto-P2, #343434);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 663px;
+    height: 281px;
+    flex-shrink: 0;
+}
+
+.custom-h3 {
+    color: var(--Azul-A4, #12141B);
+    width: 693px;
+    font-family: Satoshi;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
 
 .projeto-content {
     padding: 20px;
@@ -249,94 +357,105 @@
 }
 
 /* Seção de Testemunhos */
-#testemunho {
-    background-color: #f5f5f5;
-    /* Fundo leve para uma aparência clean */
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-}
-
-#testemunho .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.carousel-item h2 {
-    font-size: 1.5rem;
-    /* Ajuste o tamanho da fonte conforme necessário */
-    color: #333;
-    margin-bottom: 20px;
-    font-style: italic;
-    /* Estilo de fonte para citações */
-}
-
-.carousel-item img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-}
-
-.carousel-item em {
-    display: block;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Botões de navegação do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    /* Cor de fundo dos botões */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #fff;
-    /* Cor dos ícones */
-    border-radius: 50%;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: #0056b3;
-    /* Cor de fundo ao passar o mouse */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 20px;
-    height: 20px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .projetos-section {
     position: relative;
     overflow: hidden;
     /* Para garantir que o overlay fique dentro da seção */
 }
 
-.fundo {
-    background-image: url('./imgProjetos/Flexi4A.png');
-    /* Use url() corretamente */
-    background-color: #0056b3;
-    width: 100%;
-    height: 100%;
-    /* Defina a altura para garantir que a imagem de fundo seja visível */
-    background-position: center center;
-    /* Centraliza a imagem */
-    background-size: cover;
-    /* Faz a imagem cobrir toda a área */
+/*.projetos-list-container {
+    opacity: 0;
+    transform: translateX(-50px); // Começa 50px à esquerda 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+
+.projetos-list-container.appear {
+    opacity: 1;
+    transform: translateX(0); // Volta à posição normal 
+}*/
+.container-inf {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+}
+
+.projetos-list-inf {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 1;
+    margin-left: 50px;
+    margin-top: -350px;
+
+}
+
+.projeto-img-inf {
+    width: 377px;
+    /* Controla a largura da imagem */
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+    overflow: hidden;
+    /* Impede que a imagem ultrapasse o contêiner */
+    margin-left: 800px;
+
+}
+
+.projeto-img-inf img {
+    width: 100%;
+    /* Ajusta a imagem à largura do contêiner */
+    height: auto;
+    object-fit: cover;
+    /* Mantém as proporções da imagem */
+}
+
+.container-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    /* Alinha o texto à esquerda */
+    gap: 10px;
+    flex: 1;
+    /* Faz o texto ocupar o restante do espaço */
+}
+
+/*.projetos-list-inf h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    color: #12141B;
+    font-family: Satoshi;
+}*/
+
+/*.projetos-list-inf h4 {
+    font-size: 18px;
+    color: #343434;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    margin-right: 600px;
+}*/
+
+/*.containerFundo {
+    opacity: 0;
+    transform: translateX(-50px); // Começa 50px à esquerda 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.containerFundo.appear {
+    opacity: 1;
+    transform: translateX(0); // Volta à posição normal 
+}*/

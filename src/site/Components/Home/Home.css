@@ -1,48 +1,88 @@
 .bannerHome {
     position: relative;
-    /* Permite o posicionamento absoluto do conteúdo */
-    width: 1349px;
-    min-height: 348px;
-    /* Altura mínima do banner */
-    background-image: url("https://www.institutoacervo.org.br/wp-content/uploads/2024/03/img42.jpg");
+    width: 100%;
+    min-height: 100vh; /* Garante que o banner ocupe a tela toda */
+    background-image: url('../../../../public/Images/image4.jpg');
     background-position: center center;
-    /* Centraliza a imagem */
-    background-size: cover;
-    /* Faz a imagem cobrir toda a área */
+    background-size: cover; /* Ajusta a imagem para preencher o banner */
+    background-repeat: no-repeat;
     display: flex;
-    /* Usando flexbox para centralizar o conteúdo */
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza o conteúdo verticalmente */
     transition: background 0.3s ease;
-    /* Transição suave para o fundo */
-    margin-top: 90px;
-    height: 450px;
+    margin-top: -100px;
 }
 
 .bannerHome-content {
-
-    background: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro com transparência para legibilidade */
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 30.81%, rgba(0, 0, 0, 0.8) 95.91%), 
+                linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
     color: white;
-    /* Cor do texto */
     padding: 30px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Centraliza o texto */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    width: 1349px;
-    min-height: 348px;
-    padding: 30px;
-    /* Espaçamento interno */
-    height: 450px;
-
+    border-radius: 0px;
+    height: 100%; /* Preenche a altura do banner */
+    width: 100%; /* Preenche a largura do banner */
+    margin: 0; /* Remove qualquer margem */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-tituloBanner{
-    color: white;
+
+
+
+
+.bannerHome h1 {
+    color: #F8FAFD;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 8vw; /* Ajuste dinâmico do tamanho da fonte */
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+    text-shadow: 3px 2px 1px #000000;
+}
+
+.bannerHome h5 {
+    color: #E7E7E7;
+    font-family: 'Inter', sans-serif;
+    font-size: 2vw; /* Ajuste dinâmico do tamanho da fonte */
+    line-height: 1.4;
+    text-align: center;
+    width: 80%;
+    max-width: 700px; /* Limita a largura máxima */
+    text-shadow: 1px 1px 1px #000000;
+    margin-top: 1rem;
+}
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .bannerHome-content {
+        padding: 20px;
+    }
+
+    .bannerHome h1 {
+        font-size: 10vw; /* Maior flexibilidade no tamanho da fonte */
+    }
+
+    .bannerHome h5 {
+        font-size: 4vw;
+        width: 90%;
+    }
+}
+
+.public-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.public-box p {
+    max-width: 60vw;
+}
+
+.public-photo img {
+    max-width: 30vw;
 }
 
 /* Responsividade */
@@ -51,11 +91,282 @@ tituloBanner{
         --content-width: 920px;
         /* Largura do conteúdo em telas maiores */
         padding: 0%;
-        /* foi adicionado para cobrir o banner ver oque prejudica a responsividade*/
+        /* Para cobrir o banner */
     }
 
     .banner-content {
         --overlay-opacity: 0.5;
         /* Opacidade do overlay */
     }
+}
+
+/*feito*/
+.headerBanner h1 {
+    width: 1500px;
+    color: var(--Branco-C0, #F8FAFD);
+    /* H1 */
+    font-family: 'Satoshi', sans-serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 304px;
+    margin-left: 41px;
+
+}
+
+/*feito*/
+.headerBanner h5 {
+    color: var(--Branco-c01, #E7E7E7);
+    font-family: Inter;
+    font-size: 24px;
+    line-height: normal;
+    font-style: normal;
+    text-align: left;
+    width: 700px;
+    height: 300px;
+    margin-left: 45px;
+    margin-right: -145px;
+    /* Margem à esquerda de 76.73px */
+    /* Margem à direita de 697.1px */
+}
+
+
+.home-list-container {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Inverte a ordem para que o texto venha antes da imagem */
+    align-items: center;
+    /* Alinha os itens ao centro verticalmente */
+    gap: 20px;
+    /* Espaço entre a imagem e o texto */
+    padding: 20px;
+    max-width: 1400px;
+    /* Limita a largura do contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner na página */
+
+}
+.imgQurmSomos{
+    width: 190%;
+    height: auto; /* Definindo uma altura fixa para o contêiner da imagem */
+}
+.imgQurmSomos img{
+        width: 100%;
+        height: auto; /* Garantindo que a imagem ocupe toda a altura do contêiner */
+        object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+        border-radius: 0px;
+}
+.home-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; /* Alinha os itens no centro */
+}
+
+.home-list h3 {
+    margin-top: 75px;
+    width: 100%;
+    font-size: 48px;
+    height: auto;
+    margin-right: 0;
+    color: var(--Azul-A4, #12141B);
+    font-family: Satoshi;
+    margin-bottom: 15px;
+    text-shadow: 1px 0 0 #12141B, -1px 0 0 #12141B, 0 1px 0 #12141B, 0 -1px 0 #12141B;
+}
+
+.home-list h4 {
+    width: 100%;
+    font-size: 30px;
+    color: #343434;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 0 10px;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 347px; /* Define uma altura mínima para que o h4 tenha uma altura consistente com a imagem */
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .home-list h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .home-list h4 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .imgQurmSomos{
+        height: 250px; /* Reduz a altura da imagem em tablets */
+    }
+
+    .imgQurmSomos img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    .home-list {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .home-list h3 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .home-list h4 {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .imgQurmSomos {
+        height: 200px; /* Ajusta a altura da imagem para celulares */
+    }
+
+    .imgQurmSomos img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Container geral que controla o layout das divs */
+/* Container geral que controla o layout das divs */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaço uniforme entre as caixas */
+    align-items: stretch; /* Faz com que todas as caixas tenham a mesma altura */
+    gap: 20px; /* Espaçamento entre as caixas */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Opcional: Centraliza o container */
+}
+
+/* Estilo de cada caixa */
+.box {
+    flex: 1; /* Todas as caixas têm o mesmo tamanho */
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilo do título dentro das caixas */
+.box h2 {
+    font-size: 1.5rem;
+    color: #007BFF; /* Cor para o título */
+    margin-bottom: 10px;
+}
+
+/* Estilo do texto dentro das caixas */
+.box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo do conteúdo da lista (Valores) */
+.box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.box ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+    }
+    .box {
+        margin-bottom: 15px; /* Espaçamento entre as caixas */
+    }
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .value-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .title {
+    font-size: 2rem;
+    color: #4A90E2; /* Azul para o título */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .containerProjetos {
+    background-color: #007BFF; /* Fundo azul */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.containerProjetos h1 {
+    color: white; /* Cor do texto do h1 em branco */
+}
+
+.containerProjetos button {
+    background-color: #007BFF; /* Fundo azul igual à div */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombramento ao redor do botão */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.containerProjetos button:hover {
+    background-color: #0056b3; /* Cor mais escura quando o botão é hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombramento mais forte ao passar o mouse */
 }

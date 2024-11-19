@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './projeto.css';
-
-import img1 from './imgProjetos/img1.jpg';
-
-
+import React, { useState, useEffect } from 'react';import './projeto.css';
+import img7 from './imgProjetos/img4.jpg';
 import useIntersectionObserver from './hooks/useIntersectionObserver';
-import Testemunho from './Testemunho';
-import InscricaoFutebol from '../Projetos/InscricaoFutebol';
+
 
 function AnimatedNumber({ end, start }) {
   const [count, setCount] = useState(start);
@@ -33,34 +27,19 @@ function AnimatedNumber({ end, start }) {
   return <span>{count}</span>;
 }
 
-function ProjetoItem({ projeto, onClick }) {
-  return (
-    <li className="projeto-item">
-      <img src={projeto.imgSrc} alt={projeto.title} className="projeto-img" />
-      <div className="projeto-content">
-        <h3>{projeto.title}</h3>
-        <p>{projeto.description}</p>
-        <button className="projeto-btn" onClick={onClick}>Saiba Mais</button>
-      </div>
-    </li>
-  );
-}
+
 
 function Projetos() {
-  const navigate = useNavigate();
+  const [ref1, isVisible1] = useIntersectionObserver({ threshold: 0.5 });
+  const [ref2, isVisible2] = useIntersectionObserver({ threshold: 0.5 });
+  const [ref3, isVisible3] = useIntersectionObserver({ threshold: 0.5 });
+  const [ref4, isVisible4] = useIntersectionObserver({ threshold: 0.5 });
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
-
-
-
-  const navegarParaPaginaFutebol = () => {
-    navigate('/pagina-futebol');
-  };
-
   return (
     <section>
       <header className="header banner">
         <div className="header-content banner-content">
-          <h1>Nossos Projetos</h1>
+          <h1>NOSSOS PROJETOS</h1>
           <div>
             <h5>A Associação União Alexandrense é uma organização da sociedade
               civil sem fins lucrativos que se sustenta por meio de doação e de trabalho
@@ -72,25 +51,62 @@ function Projetos() {
             <button className='saibaMais'>Saiba mais</button>
           </div>
         </div>
-
       </header>
 
       <div className="intro">
-        <p>Conheça os projetos que desenvolvemos para impactar positivamente a vida das pessoas na comunidade de Foz do Iguaçu.</p>
-      </div>
 
-      <div className="projetos-list-container">
+      </div>
+      <div
+        className={`projetos-list-container ${isVisible1 ? 'appear' : ''}`}
+        ref={ref1}
+      >
+        <div className="projeto-img">
+          <img src={img7} alt="img" />
+        </div>
         <div className="projetos-list">
-          <h3>Educação para todos</h3>
-          <h4>O ensino do futebol pode ir além dele, podendo aprender habilidades para outros
-            esportes, seu desenvolvimento moral e social, aprendendo a
-            conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+          <h3 className="custom-h3">EDUCAÇÃO PARA TODOS</h3>
+          <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
         </div>
-        <div>
-         <img src="./Porjetos/imgProjetos/img1.jpg" alt="" />
+      </div>
+      
+      <div
+        className={`container-inf ${isVisible2 ? 'appear' : ''}`}
+        ref={ref2}
+      >
+        <div className="projeto-img-inf">
+          <img src={img7} alt="img" />
+        </div>
+        <div className="projetos-list-inf">
+          <h3 className="custom-h3">ESPORTE E CIDANANIA</h3>
+          <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div>
+      </div>
+      <div
+        className={`projetos-list-container ${isVisible3 ? 'appear' : ''}`}
+        ref={ref3}
+      >
+        <div className="projeto-img">
+          <img src={img7} alt="img" />
+        </div>
+        <div className="projetos-list">
+          <h3 className="custom-h3">ARTE E CULTURA</h3>
+          <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div>
+      </div>
+      <div
+        className={`containerFundo${isVisible4 ? 'appear' : ''}`}
+        ref={ref4}
+      >
+        <div className="projeto-img">
+          <img src={img7} alt="img" />
+        </div>
+        <div className="projetos-list"s>
+          <h3 className="custom-h3">SAÚDE E BEM-ESTAR</h3>
+          <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
         </div>
       </div>
 
+      {/* continuação*/}
       <h2>Transformando Vidas</h2>
       <p>Veja como nossas ações têm mudado a vida de crianças e adolescentes na comunidade.</p>
       <ul className="stats-list" ref={ref}>
@@ -98,8 +114,21 @@ function Projetos() {
         <li><span>{isVisible ? <AnimatedNumber end={1200} start={0} /> : '1200'}</span> refeições distribuídas</li>
         <li><span>{isVisible ? <AnimatedNumber end={50} start={0} /> : '50'}</span> voluntários ativos</li>
       </ul>
-      <Testemunho />
-      <InscricaoFutebol />
+
+      <div className="inscricaoContainer">
+        <div className="projeto-img">
+          <img src={img7} alt="img" />
+        </div>
+        <div className="projetos-list">
+          <h3 className="custom-h3">JUNTE-SE A NÓS!</h3>
+          <h4 class="custom-h4">Você sonha em jogar bola? Esta é a sua chance! Venha fazer parte de um time que valoriza o esporte, a amizade e a comunidade. Com treinamentos regulares, jogos emocionantes e a chance de fazer novos amigos, você não vai querer perder essa oportunidade! Inscreva-se e descubra como o esporte pode transformar a sua vida!</h4>
+          <div>      
+            <button className='inscricao'>INSCREVA-SE</button>
+        </div>
+        </div>
+        
+      </div>
+
     </section>
   );
 }
