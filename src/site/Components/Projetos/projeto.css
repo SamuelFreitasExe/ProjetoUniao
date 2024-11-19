@@ -138,55 +138,44 @@
 }
 
 
-
-.intro p {
-    margin: 0 auto 20px;
-    max-width: 800px;
-    font-size: 1.1rem;
-    color: #666;
-    text-align: center;
-}
-
 .projetos-list-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    margin-left: 0; /* Remove margem da lateral esquerda */
+    margin-right: 0; /* Remove margem da lateral direita */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
     gap: 20px;
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
+    align-items: stretch; /* Alinha os itens com a mesma altura */
+    margin-top: 75px; /* Espaço acima do container */
+    background-color: #007bff; /* Fundo azul */
+    padding: 0; /* Opcional: remove padding interno */
+    box-sizing: border-box; /* Garante que largura inclui borda e padding */
+    height: 350px;
+
 }
 
 
 .projeto-img {
-    width: 377px;
-    /* Controla a largura da imagem */
-    flex-shrink: 0;
-    /* Impede que a imagem encolha */
-    overflow: hidden;
-    /* Impede que a imagem ultrapasse o contêiner */
+    width: 30%; /* Define a largura da imagem */
+    flex-shrink: 0; /* Impede o encolhimento */
+    overflow: hidden; /* Previne estouro do contêiner */
 }
 
 .projeto-img img {
-    width: 100%;
-    /* Ajusta a imagem à largura do contêiner */
-    height: auto;
-    object-fit: cover;
-    /* Mantém as proporções da imagem */
+    width: 100%; /* Imagem preenche o container */
+    height: auto; /* Mantém proporções da imagem */
+    object-fit: cover; /* Ajusta o conteúdo da imagem */
 }
 
 .projetos-list {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: flex-start;
-    /* Alinha o texto à esquerda */
-    gap: 10px;
-    flex: 1;
-    /* Faz o texto ocupar o restante do espaço */
+    flex-direction: column; /* Garante o layout vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    flex: 1; /* Faz com que tome o espaço restante ao lado da imagem */
+    max-width: calc(100% - 377px); /* Limita largura com base no container */
+    padding-left: 20px; /* Espaço entre texto e imagem */
+    margin-left: 35px;
+    margin-top: 65px;
 }
 
 /*.projetos-list h3 {
@@ -374,63 +363,47 @@
     transform: translateX(0); // Volta à posição normal 
 }*/
 .container-inf {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    margin-left: 0; /* Remove margem da lateral esquerda */
+    margin-right: 0; /* Remove margem da lateral direita */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
     gap: 20px;
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
+    align-items: stretch; /* Alinha os itens com a mesma altura */
+    margin-top: 75px; /* Espaço acima do container */
+    padding: 0; /* Opcional: remove padding interno */
+    box-sizing: border-box; /* Garante que largura inclui borda e padding */
+    height: 350px;
 }
 
-.projetos-list-inf {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1 1;
-    margin-left: 50px;
-    margin-top: -350px;
-
-}
 
 .projeto-img-inf {
-    width: 377px;
-    /* Controla a largura da imagem */
-    flex-shrink: 0;
-    /* Impede que a imagem encolha */
-    overflow: hidden;
-    /* Impede que a imagem ultrapasse o contêiner */
-    margin-left: 800px;
-
+    width: 30%; /* Define a largura da imagem */
+    flex-shrink: 0; /* Impede o encolhimento */
+    overflow: hidden; /* Previne estouro do contêiner */
+    
 }
 
 .projeto-img-inf img {
-    width: 100%;
-    /* Ajusta a imagem à largura do contêiner */
-    height: auto;
-    object-fit: cover;
-    /* Mantém as proporções da imagem */
+    width: 100%; /* Imagem preenche o container */
+    height: auto; /* Mantém proporções da imagem */
+    object-fit: cover; /* Ajusta o conteúdo da imagem */
 }
 
-.container-inf {
+.projetos-list-inf {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: flex-start;
-    /* Alinha o texto à esquerda */
-    gap: 10px;
-    flex: 1;
-    /* Faz o texto ocupar o restante do espaço */
+    flex-direction: column; /* Garante o layout vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    flex: 1; /* Faz com que tome o espaço restante ao lado da imagem */
+    max-width: calc(100% - 377px); /* Limita largura com base no container */
+    padding-left: 20px; /* Espaço entre texto e imagem */
+    margin-left: 35px;
+    margin-top: 65px;
 }
+
+
+
+
 
 /*.projetos-list-inf h3 {
     font-size: 28px;

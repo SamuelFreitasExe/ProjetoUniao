@@ -53,19 +53,31 @@ function Projetos() {
         </div>
       </header>
 
-      <div className="intro">
-
-      </div>
+      
       <div
-        className={`projetos-list-container ${isVisible1 ? 'appear' : ''}`}
+        className={`container-inf ${isVisible1 ? 'appear' : ''}`}
         ref={ref1}
+      >
+        
+        <div className="projetos-list-inf">
+        <h3 className="custom-h3">EDUCAÇÃO PARA TODOS</h3>
+        <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div>
+        <div className="projeto-img-inf">
+          <img src={img7} alt="img" />
+        </div>
+      </div>
+
+      <div
+        className={`projetos-list-container ${isVisible2 ? 'appear' : ''}`}
+        ref={ref2}
       >
         <div className="projeto-img">
           <img src={img7} alt="img" />
         </div>
         <div className="projetos-list">
-          <h3 className="custom-h3">EDUCAÇÃO PARA TODOS</h3>
-          <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        <h3 className="custom-h3">ESPORTE E CIDANANIA</h3>
+        <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
         </div>
       </div>
       
@@ -73,12 +85,13 @@ function Projetos() {
         className={`container-inf ${isVisible2 ? 'appear' : ''}`}
         ref={ref2}
       >
-        <div className="projeto-img-inf">
-          <img src={img7} alt="img" />
-        </div>
+       
         <div className="projetos-list-inf">
           <h3 className="custom-h3">ESPORTE E CIDANANIA</h3>
           <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div> 
+        <div className="projeto-img-inf">
+          <img src={img7} alt="img" />
         </div>
       </div>
       <div
@@ -94,15 +107,15 @@ function Projetos() {
         </div>
       </div>
       <div
-        className={`containerFundo${isVisible4 ? 'appear' : ''}`}
+        className={`container-inf ${isVisible4 ? 'appear' : ''}`}
         ref={ref4}
       >
-        <div className="projeto-img">
-          <img src={img7} alt="img" />
-        </div>
         <div className="projetos-list"s>
           <h3 className="custom-h3">SAÚDE E BEM-ESTAR</h3>
           <h4 class="custom-h4">O ensino do futebol pode ir além dele, podendo aprender habilidades para outros esportes, seu desenvolvimento moral e social, aprendendo a conviver em grupo e com regras. Além do esporte, pensamos na condição humana.</h4>
+        </div>
+        <div className="projeto-img">
+          <img src={img7} alt="img" />
         </div>
       </div>
 
@@ -116,14 +129,15 @@ function Projetos() {
       </ul>
 
       <div className="inscricaoContainer">
-        <div className="projeto-img">
-          <img src={img7} alt="img" />
-        </div>
-        <div className="projetos-list">
+       
+        <div className="projetos-list-inf">
           <h3 className="custom-h3">JUNTE-SE A NÓS!</h3>
           <h4 class="custom-h4">Você sonha em jogar bola? Esta é a sua chance! Venha fazer parte de um time que valoriza o esporte, a amizade e a comunidade. Com treinamentos regulares, jogos emocionantes e a chance de fazer novos amigos, você não vai querer perder essa oportunidade! Inscreva-se e descubra como o esporte pode transformar a sua vida!</h4>
           <div>      
             <button className='inscricao'>INSCREVA-SE</button>
+        </div>
+         <div className="projeto-img-inf">
+          <img src={img7} alt="img" />
         </div>
         </div>
         
