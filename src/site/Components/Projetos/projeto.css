@@ -177,6 +177,16 @@
     margin-left: 35px;
     margin-top: 65px;
 }
+.projetos-list-container {
+    opacity: 0;
+    transform: translateX(-50px); /*Começa 50px à esquerda */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.projetos-list-container.appear {
+    opacity: 1;
+    transform: translateX(0); /* Volta à posição normal */
+}
 
 /*.projetos-list h3 {
     font-size: 28px;
@@ -345,12 +355,7 @@
     }
 }
 
-/* Seção de Testemunhos */
-.projetos-section {
-    position: relative;
-    overflow: hidden;
-    /* Para garantir que o overlay fique dentro da seção */
-}
+
 
 /*.projetos-list-container {
     opacity: 0;
@@ -422,13 +427,13 @@
     margin-right: 600px;
 }*/
 
-/*.containerFundo {
+.container-inf {
     opacity: 0;
-    transform: translateX(-50px); // Começa 50px à esquerda 
+    transform: translateX(-50px); /*Começa 50px à esquerda */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.containerFundo.appear {
+.container-inf.appear {
     opacity: 1;
-    transform: translateX(0); // Volta à posição normal 
-}*/
+    transform: translateX(0); /* Volta à posição normal */
+}
