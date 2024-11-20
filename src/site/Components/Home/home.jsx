@@ -68,7 +68,7 @@ function Home() {
         </p>
       </div>
 
-      <div class="containerProjetos">
+      <div className="containerProjetos">
         <h1>Saiba mais sobre nossos projetos</h1>
         <a href="/projetos">
           <button>Saiba Mais</button>
