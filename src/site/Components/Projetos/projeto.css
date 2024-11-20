@@ -82,7 +82,7 @@
     left: 68.19px;
     gap: 0px;
     opacity: 0px;
-    font-family: Satoshi;
+    font-family: 'Satoshi', sans-serif;
     font-size: 100px;
     font-weight: 700;
     line-height: 135px;
@@ -91,7 +91,7 @@
 }
 
 .header h5 {
-    font-family: Inter;
+    font-family: "Inter", serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 29.05px;
@@ -139,53 +139,76 @@
 
 
 .projetos-list-container {
-    width: 100%; /* Faz o container ocupar toda a largura disponível */
-    margin-left: 0; /* Remove margem da lateral esquerda */
-    margin-right: 0; /* Remove margem da lateral direita */
+    width: 100%;
+    /* Faz o container ocupar toda a largura disponível */
+    margin-left: 0;
+    /* Remove margem da lateral esquerda */
+    margin-right: 0;
+    /* Remove margem da lateral direita */
     display: flex;
-    flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
+    flex-wrap: nowrap;
+    /* Garante que os itens fiquem lado a lado */
     gap: 20px;
-    align-items: stretch; /* Alinha os itens com a mesma altura */
-    margin-top: 75px; /* Espaço acima do container */
-    background-color: #007bff; /* Fundo azul */
-    padding: 0; /* Opcional: remove padding interno */
-    box-sizing: border-box; /* Garante que largura inclui borda e padding */
+    align-items: stretch;
+    /* Alinha os itens com a mesma altura */
+    margin-top: 75px;
+    /* Espaço acima do container */
+    background-color: #007bff;
+    /* Fundo azul */
+    padding: 0;
+    /* Opcional: remove padding interno */
+    box-sizing: border-box;
+    /* Garante que largura inclui borda e padding */
     height: 350px;
 
 }
 
 
 .projeto-img {
-    width: 30%; /* Define a largura da imagem */
-    flex-shrink: 0; /* Impede o encolhimento */
-    overflow: hidden; /* Previne estouro do contêiner */
+    width: 30%;
+    /* Define a largura da imagem */
+    flex-shrink: 0;
+    /* Impede o encolhimento */
+    overflow: hidden;
+    /* Previne estouro do contêiner */
 }
 
 .projeto-img img {
-    width: 100%; /* Imagem preenche o container */
-    height: auto; /* Mantém proporções da imagem */
-    object-fit: cover; /* Ajusta o conteúdo da imagem */
+    width: 100%;
+    /* Imagem preenche o container */
+    height: auto;
+    /* Mantém proporções da imagem */
+    object-fit: cover;
+    /* Ajusta o conteúdo da imagem */
 }
 
 .projetos-list {
     display: flex;
-    flex-direction: column; /* Garante o layout vertical */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    flex: 1; /* Faz com que tome o espaço restante ao lado da imagem */
-    max-width: calc(100% - 377px); /* Limita largura com base no container */
-    padding-left: 20px; /* Espaço entre texto e imagem */
+    flex-direction: column;
+    /* Garante o layout vertical */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    flex: 1;
+    /* Faz com que tome o espaço restante ao lado da imagem */
+    max-width: calc(100% - 377px);
+    /* Limita largura com base no container */
+    padding-left: 20px;
+    /* Espaço entre texto e imagem */
     margin-left: 35px;
     margin-top: 65px;
 }
+
 .projetos-list-container {
     opacity: 0;
-    transform: translateX(-50px); /*Começa 50px à esquerda */
+    transform: translateX(-50px);
+    /*Começa 50px à esquerda */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .projetos-list-container.appear {
     opacity: 1;
-    transform: translateX(0); /* Volta à posição normal */
+    transform: translateX(0);
+    /* Volta à posição normal */
 }
 
 /*.projetos-list h3 {
@@ -368,40 +391,59 @@
     transform: translateX(0); // Volta à posição normal 
 }*/
 .container-inf {
-    width: 100%; /* Faz o container ocupar toda a largura disponível */
-    margin-left: 0; /* Remove margem da lateral esquerda */
-    margin-right: 0; /* Remove margem da lateral direita */
+    width: 100%;
+    /* Faz o container ocupar toda a largura disponível */
+    margin-left: 0;
+    /* Remove margem da lateral esquerda */
+    margin-right: 0;
+    /* Remove margem da lateral direita */
     display: flex;
-    flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
+    flex-wrap: nowrap;
+    /* Garante que os itens fiquem lado a lado */
     gap: 20px;
-    align-items: stretch; /* Alinha os itens com a mesma altura */
-    margin-top: 75px; /* Espaço acima do container */
-    padding: 0; /* Opcional: remove padding interno */
-    box-sizing: border-box; /* Garante que largura inclui borda e padding */
+    align-items: stretch;
+    /* Alinha os itens com a mesma altura */
+    margin-top: 75px;
+    /* Espaço acima do container */
+    padding: 0;
+    /* Opcional: remove padding interno */
+    box-sizing: border-box;
+    /* Garante que largura inclui borda e padding */
     height: 350px;
 }
 
 
 .projeto-img-inf {
-    width: 30%; /* Define a largura da imagem */
-    flex-shrink: 0; /* Impede o encolhimento */
-    overflow: hidden; /* Previne estouro do contêiner */
-    
+    width: 30%;
+    /* Define a largura da imagem */
+    flex-shrink: 0;
+    /* Impede o encolhimento */
+    overflow: hidden;
+    /* Previne estouro do contêiner */
+
 }
 
 .projeto-img-inf img {
-    width: 100%; /* Imagem preenche o container */
-    height: auto; /* Mantém proporções da imagem */
-    object-fit: cover; /* Ajusta o conteúdo da imagem */
+    width: 100%;
+    /* Imagem preenche o container */
+    height: auto;
+    /* Mantém proporções da imagem */
+    object-fit: cover;
+    /* Ajusta o conteúdo da imagem */
 }
 
 .projetos-list-inf {
     display: flex;
-    flex-direction: column; /* Garante o layout vertical */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    flex: 1; /* Faz com que tome o espaço restante ao lado da imagem */
-    max-width: calc(100% - 377px); /* Limita largura com base no container */
-    padding-left: 20px; /* Espaço entre texto e imagem */
+    flex-direction: column;
+    /* Garante o layout vertical */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    flex: 1;
+    /* Faz com que tome o espaço restante ao lado da imagem */
+    max-width: calc(100% - 377px);
+    /* Limita largura com base no container */
+    padding-left: 20px;
+    /* Espaço entre texto e imagem */
     margin-left: 35px;
     margin-top: 65px;
 }
@@ -429,11 +471,13 @@
 
 .container-inf {
     opacity: 0;
-    transform: translateX(-50px); /*Começa 50px à esquerda */
+    transform: translateX(-50px);
+    /*Começa 50px à esquerda */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .container-inf.appear {
     opacity: 1;
-    transform: translateX(0); /* Volta à posição normal */
+    transform: translateX(0);
+    /* Volta à posição normal */
 }
