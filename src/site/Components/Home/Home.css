@@ -1,8 +1,10 @@
 .bannerHome {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Garante que o banner ocupe a tela toda */
-    background-image: url('../../../../public/Images/image4.jpg');
+    /* Largura total */
+    max-height: 100vh;
+    /* Altura mínima do banner */
+    background-image: url('../../../../public/Images/home4.jpg');
     background-position: center center;
     background-size: cover; /* Ajusta a imagem para preencher o banner */
     background-repeat: no-repeat;
@@ -10,6 +12,7 @@
     justify-content: center;
     align-items: center;
     transition: background 0.3s ease;
+
     margin-top: -100px;
 }
 
@@ -22,16 +25,12 @@
     border-radius: 0px;
     height: 100%; /* Preenche a altura do banner */
     width: 100%; /* Preenche a largura do banner */
-    margin: 0; /* Remove qualquer margem */
+    margin: 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 .bannerHome h1 {
     color: #F8FAFD;
@@ -41,7 +40,9 @@
     line-height: 1.1;
     text-align: center;
     margin: 0;
-    text-shadow: 3px 2px 1px #000000;
+
+    /* Transição suave para o fundo */
+    margin-top: 0;
 }
 
 .bannerHome h5 {
@@ -69,6 +70,7 @@
         font-size: 4vw;
         width: 90%;
     }
+
 }
 
 .public-box {

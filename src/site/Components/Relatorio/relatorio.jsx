@@ -9,6 +9,16 @@ function Relatorio() {
 
     <>
       <section id="relatorio">
+        <header className="header banner-relatorio">
+              <div className="header-content banner-relatorio-content">
+                  <h1>Bora nessa ciência</h1>
+                  <div>
+                      <h5>Toda a transparência para fazer a diferença!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto pariatur explicabo consequatur fugit ea facere saepe incidunt dolorum et atque perspiciatis debitis, doloremque dolore odio? Voluptatibus, delectus? Ipsam, voluptatum.
+                      </h5>
+                  </div>
+              </div>
+        </header>
         <section id="intro">
           <h1>Transparência e Relatórios</h1>
           <h2>Transparência e Compromisso com a Comunidade</h2>
