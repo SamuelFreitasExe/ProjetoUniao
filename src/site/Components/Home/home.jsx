@@ -30,7 +30,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container-custon">
           <div className="box">
             <h2>Visão</h2>
             <p>Nossa visão é ser líder no mercado, oferecendo produtos inovadores e sustentáveis, impactando positivamente a sociedade.</p>
@@ -41,7 +41,6 @@ function Home() {
           </div>
           <div className="box">
             <h2>Valores</h2>
-
             <ul className="value-list">
               <li>Inovação</li>
               <li>Compromisso</li>
@@ -57,7 +56,7 @@ function Home() {
       </div>
       <ProjetoMapa />
 
-      <div className="container">
+      <div className="containerinf">
         <h1 className="title">PROJETO CHUTE INICIAL</h1>
         <p className="text">
           De maneira social a Associação União Alexandrense vem mantendo através de doações e trabalho voluntário e, a partir de 2022, ficou apta a participar de chamada pública municipal para pleitear recursos da Lei de Incentivo ao Esporte. Aulas de futebol para crianças e jovens de 05 a 17 anos são divididas em 7 categorias no contraturno escolar. Os alunos precisam estar todos matriculados na Educação Básica.
@@ -74,29 +73,6 @@ function Home() {
           <button>Saiba Mais</button>
         </a>
       </div>
-      <section id="facebook">
-        <h2>Patrocinadores</h2>
-        <div className="public-box">
-          <p>Um texto e uma imagem que tenham a ver com o assunto.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, temporibus eos. Earum excepturi maxime molestias autem! Accusantium nisi quam nemo, nobis quis qui unde cum sapiente totam eos, facilis maxime!
-          </p>
-          <a className="public-photo" href="/#">
-            <img src="/Images/imgContato/Facebook.png" alt="Facebook" />
-          </a>
-        </div>
-      </section>
-
-      <section id="whatsapp">
-        <h2>Conheça Nossa Idoneidade</h2>
-        <div className="public-box">
-          <a className="public-photo" href="/#">
-            <img src="/Images/imgContato/Zap.gif" alt="Whatsapp" />
-          </a>
-          <p>Um texto e uma imagem que tenham a ver com o assunto.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, temporibus eos. Earum excepturi maxime molestias autem! Accusantium nisi quam nemo, nobis quis qui unde cum sapiente totam eos, facilis maxime!</p>
-        </div>
-      </section>
-
     </section>
   );
 }

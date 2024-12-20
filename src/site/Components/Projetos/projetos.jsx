@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'; import './projeto.css';
+import React, { useState, useEffect } from 'react';
+import './projeto.css';
 import img7 from './imgProjetos/img4.jpg';
 import useIntersectionObserver from './hooks/useIntersectionObserver';
 

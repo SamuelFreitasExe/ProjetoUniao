@@ -68,20 +68,6 @@ p {
     margin: 8% 3% 5% 0;
 }
 
-/* Sobre */
-#sobre {
-    background-color: #0d6efd;
-    color: #ffffff;
-    padding: 100px 0 70px 0;
-}
-
-#sobre img {
-    width: 100%;
-}
-
-.btn-sobre {
-    margin: 8% 3% 5% 0;
-}
 
 /* Projetos */
 .icon {

@@ -1,34 +1,36 @@
 .bannerHome {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Garante que o banner ocupe a tela toda */
-    background-image: url('../../../../public/Images/image4.jpg');
+    min-height: 100vh;
+    /* Garante que o banner ocupe a tela toda */
+    background-image: url('../../../../public/Images/banner.png');
     margin-top: -100px;
 }
+
 .bannerHome-content {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 30.81%, rgba(0, 0, 0, 0.8) 95.91%), 
-                linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 30.81%, rgba(0, 0, 0, 0.8) 95.91%),
+        linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
     color: white;
     padding: 30px;
     text-align: center;
     border-radius: 0px;
-    height: 100%; /* Preenche a altura do banner */
-    width: 100%; /* Preenche a largura do banner */
-    margin: 0; /* Remove qualquer margem */
+    height: 100%;
+    /* Preenche a altura do banner */
+    width: 100%;
+    /* Preenche a largura do banner */
+    margin: 0;
+    /* Remove qualquer margem */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-
-
-
 .bannerHome h1 {
     color: #F8FAFD;
     font-family: 'Satoshi', sans-serif;
-    font-size: 8vw; /* Ajuste dinâmico do tamanho da fonte */
+    font-size: 8vw;
+    /* Ajuste dinâmico do tamanho da fonte */
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
@@ -38,14 +40,17 @@
 .bannerHome h5 {
     color: #E7E7E7;
     font-family: 'Inter', sans-serif;
-    font-size: 2vw; /* Ajuste dinâmico do tamanho da fonte */
+    font-size: 2vw;
+    /* Ajuste dinâmico do tamanho da fonte */
     line-height: 1.4;
     text-align: center;
     width: 80%;
-    max-width: 700px; /* Limita a largura máxima */
+    max-width: 700px;
+    /* Limita a largura máxima */
     text-shadow: 1px 1px 1px #000000;
     margin-top: 1rem;
 }
+
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .bannerHome-content {
@@ -53,7 +58,8 @@
     }
 
     .bannerHome h1 {
-        font-size: 10vw; /* Maior flexibilidade no tamanho da fonte */
+        font-size: 10vw;
+        /* Maior flexibilidade no tamanho da fonte */
     }
 
     .bannerHome h5 {
@@ -139,16 +145,29 @@
     /* Centraliza o contêiner na página */
 
 }
-.imgQurmSomos{
-    width: 190%;
-    height: auto; /* Definindo uma altura fixa para o contêiner da imagem */
+
+.imgQurmSomos {
+    width: 150%;
+    height: auto;
+    /* Definindo uma altura fixa para o contêiner da imagem */
+    padding-right: 0px;
+    margin-top: -5px;
 }
-.imgQurmSomos img{
-        width: 100%;
-        height: auto; /* Garantindo que a imagem ocupe toda a altura do contêiner */
-        object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
-        border-radius: 0px;
+
+.imgQurmSomos img {
+    width: 90%;
+    height: auto;
+    /* Garantindo que a imagem ocupe toda a altura do contêiner */
+    object-fit: cover;
+    /* Garante que a imagem cubra completamente o contêiner */
+    border-radius: 0px;
+    margin-top: -100px;
+
+
+
+
 }
+
 .home-list {
     display: flex;
     flex-direction: column;
@@ -156,7 +175,12 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center; /* Alinha os itens no centro */
+    padding-left: 50px;
+    align-items: center;
+    /* Alinha os itens no centro */
+    margin-top: 15px;
+
+
 }
 
 .home-list h3 {
@@ -169,6 +193,7 @@
     font-family: Satoshi;
     margin-bottom: 15px;
     text-shadow: 1px 0 0 #12141B, -1px 0 0 #12141B, 0 1px 0 #12141B, 0 -1px 0 #12141B;
+    margin-left: 15px;
 }
 
 .home-list h4 {
@@ -181,7 +206,8 @@
     padding: 0 10px;
     margin: 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    min-height: 347px; /* Define uma altura mínima para que o h4 tenha uma altura consistente com a imagem */
+    min-height: 347px;
+    /* Define uma altura mínima para que o h4 tenha uma altura consistente com a imagem */
 }
 
 /* Estilos para tablets */
@@ -197,8 +223,9 @@
         padding: 0 5px;
     }
 
-    .imgQurmSomos{
-        height: 250px; /* Reduz a altura da imagem em tablets */
+    .imgQurmSomos {
+        height: 250px;
+        /* Reduz a altura da imagem em tablets */
     }
 
     .imgQurmSomos img {
@@ -227,7 +254,8 @@
     }
 
     .imgQurmSomos {
-        height: 200px; /* Ajusta a altura da imagem para celulares */
+        height: 200px;
+        /* Ajusta a altura da imagem para celulares */
     }
 
     .imgQurmSomos img {
@@ -235,13 +263,32 @@
         height: 100%;
     }
 }
+
 /* Container geral que controla o layout das divs */
 /* Container geral que controla o layout das divs */
-.container {
+.container-custon {
     display: flex;
-    justify-content: space-between; /* Espaço uniforme entre as caixas */
-    align-items: stretch; /* Faz com que todas as caixas tenham a mesma altura */
-    gap: 20px; /* Espaçamento entre as caixas */
+    justify-content: space-between;
+    /* Espaço uniforme entre as caixas */
+    align-items: stretch;
+    /* Faz com que todas as caixas tenham a mesma altura */
+    gap: 20px;
+    /* Espaçamento entre as caixas */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: -85px;
+    /* Opcional: Centraliza o container */
+}
+
+.containerinf {
+    display: flex;
+    justify-content: space-between;
+    /* Espaço uniforme entre as caixas */
+    align-items: stretch;
+    /* Faz com que todas as caixas tenham a mesma altura */
+    gap: 20px;
+    /* Espaçamento entre as caixas */
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -250,7 +297,8 @@
 
 /* Estilo de cada caixa */
 .box {
-    flex: 1; /* Todas as caixas têm o mesmo tamanho */
+    flex: 1;
+    /* Todas as caixas têm o mesmo tamanho */
     background-color: #fff;
     color: #333;
     padding: 20px;
@@ -260,13 +308,14 @@
     font-size: 1.2rem;
     font-weight: bold;
 
- 
+
 }
 
 /* Estilo do título dentro das caixas */
 .box h2 {
     font-size: 1.5rem;
-    color: #007BFF; /* Cor para o título */
+    color: #007BFF;
+    /* Cor para o título */
     margin-bottom: 10px;
 }
 
@@ -292,12 +341,16 @@
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
+        flex-direction: column;
+        /* Muda para coluna em telas pequenas */
     }
+
     .box {
-        margin-bottom: 15px; /* Espaçamento entre as caixas */
+        margin-bottom: 15px;
+        /* Espaçamento entre as caixas */
     }
 }
+
 .toggle-btn {
     background: none;
     border: none;
@@ -305,62 +358,82 @@
     font-size: 1rem;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     transition: transform 0.3s ease;
-  }
-  
-  .arrow.open {
+}
+
+.arrow.open {
     transform: rotate(180deg);
-  }
-  
-  .value-list {
+}
+
+.value-list {
     list-style: none;
     padding: 0;
     margin-top: 10px;
-  }
-  
-  
-  
-  .title {
+}
+
+
+
+.title {
     font-size: 2rem;
-    color: #4A90E2; /* Azul para o título */
+    color: #4A90E2;
+    /* Azul para o título */
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .text {
+}
+#sobre {
+    color: #ffffff;
+    padding: 100px 0 70px 0;
+}
+
+#sobre img {
+    width: 100%;
+}
+
+.btn-sobre {
+    margin: 8% 3% 5% 0;
+}
+
+.text {
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
     text-align: justify;
-  }
-  .containerProjetos {
-    background-color: #007BFF; /* Fundo azul */
+}
+
+.containerProjetos {
+    background-color: #007BFF;
+    /* Fundo azul */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
 }
 
 .containerProjetos h1 {
-    color: white; /* Cor do texto do h1 em branco */
+    color: white;
+    /* Cor do texto do h1 em branco */
 }
 
 .containerProjetos button {
-    background-color: #007BFF; /* Fundo azul igual à div */
+    background-color: #007BFF;
+    /* Fundo azul igual à div */
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombramento ao redor do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombramento ao redor do botão */
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .containerProjetos button:hover {
-    background-color: #0056b3; /* Cor mais escura quando o botão é hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombramento mais forte ao passar o mouse */
+    background-color: #0056b3;
+    /* Cor mais escura quando o botão é hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombramento mais forte ao passar o mouse */
 }

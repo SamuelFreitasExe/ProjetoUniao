@@ -1,0 +1,140 @@
+.bannerSobre {
+    background: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 0) 30.81%,
+            rgba(0, 0, 0, 0.8) 95.91%
+        ),
+        linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../../public/Images/image4.jpg');
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    background-position: center; /* Centraliza a imagem */
+    margin-top: -100px;
+}
+
+
+.banner-content {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 44.81%, rgba(0, 0, 0, 0.8) 95.91%),
+        linear-gradient(0.9deg, rgba(0, 0, 0, 0) 49.92%, rgba(0, 0, 0, 0.8) 99.2%);
+
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 967px;
+    width: 100%;
+    /* Para ajustar a largura em telas menores */
+    max-width: 1600px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o banner horizontalmente */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-content {
+        height: auto;
+        /* Permite que o conteúdo se ajuste automaticamente */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content {
+        padding: 15px;
+    }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-content {
+        height: auto;
+        /* Permite que o conteúdo se ajuste automaticamente */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content {
+        padding: 15px;
+    }
+}
+
+
+.projetos-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    /* Fundo leve para um visual clean */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .header {
+        --content-width: 920px;
+        /* Largura do conteúdo em telas maiores */
+        padding: 0%;
+        /* Para cobrir o banner */
+    }
+
+    .banner-content {
+        --overlay-opacity: 0.5;
+        /* Opacidade do overlay */
+    }
+}
+
+.header h1 {
+    color: #F8FAFD;
+    width: 956px;
+    height: 135px;
+    top: 308.16px;
+    left: 68.19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 135px;
+    text-align: left;
+    margin-top: 308.16px;
+}
+
+.header h5 {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+    width: 738.17px;
+    height: 145px;
+    top: 445.49px;
+    left: 76.73px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.titleSobre {
+    font-size: 2rem;
+    color: #4A90E2;
+    /* Azul para o título */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textSobre {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
